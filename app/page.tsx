@@ -30,7 +30,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen">
-      <Header />
+      <Header isHomePage={true} />
       <Hero />
       <Locations />
       <OnlineChurch />

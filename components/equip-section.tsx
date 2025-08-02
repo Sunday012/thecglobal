@@ -6,7 +6,7 @@ export default function EquipSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-white/70 font-work-sans text-lg mb-4">Knowing God Above All Else</p>
-          <h2 className="text-6xl font-rubik font-bold text-white mb-8">Encounter Equip</h2>
+          <h2 className="text-7xl font-montserrat font-bold text-white mb-8">Encounter Equip</h2>
           <p className="text-white/90 font-work-sans text-lg leading-relaxed max-w-3xl mx-auto">
             Encounter Equip exists to see people in our House and around the globe know and draw closer to Jesus. This
             is an incredible tool for everyone in our House to engage with God's Word and grow in their faith journey.

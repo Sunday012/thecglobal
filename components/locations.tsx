@@ -30,8 +30,8 @@ export default function Locations() {
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-6xl font-rubik font-bold text-[#272f31] mb-4">
-            Select a <em className="font-rubik italic">City</em>
+          <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-4">
+            Select a <em className="font-playfair italic">City</em>
           </h2>
           <p className="text-[#272f31] font-work-sans text-lg mb-16 max-w-3xl">
             Our roots are in Houston and Springfield though we consider the world our neighborhood. Select a city below
@@ -42,7 +42,7 @@ export default function Locations() {
             <div className="relative group cursor-pointer">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758811/WhatsApp-Image-2024-02-19-at-03.17.40-1536x1023_m1hzhh.jpg"
+                  src="/images/houston.jpg"
                   alt="Houston"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -58,7 +58,7 @@ export default function Locations() {
             <div className="relative group cursor-pointer">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg"
+                  src="/images/springfield.jpg"
                   alt="Springfield"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

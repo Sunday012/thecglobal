@@ -6,7 +6,7 @@ import { Facebook, Instagram, Youtube } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FAE8A1] py-20 px-6 lg:px-8 relative overflow-hidden">
+    <footer className="bg-[#FAE8A1] pt-20 pb-0 px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-4 gap-12 mb-16">
           {/* Newsletter Signup */}
@@ -174,8 +174,8 @@ export default function Footer() {
       </div>
 
       {/* Large Background Text */}
-      <div className="absolute bottom-0 left-0 right-0 pointer-events-none overflow-hidden">
-        <div className="text-white/50 font-rubik font-bold text-[12rem] lg:text-[16rem] xl:text-[20rem] leading-none whitespace-nowrap">
+      <div className="pointer-events overflow-hidden">
+        <div className="text-white/50 font-montserrat mt-10 font-bold text-[12rem] lg:text-[12rem] xl:text-[16rem] leading-none whitespace-nowrap">
           the encounter center church
         </div>
       </div>

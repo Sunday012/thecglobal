@@ -25,12 +25,12 @@ export default function OurHistory() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-[#FAE8A1] py-20 px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-white py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-6xl font-rubik font-bold text-[#272f31] mb-16 text-center">Our History</h2>
+          <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-16 text-center">Our History</h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

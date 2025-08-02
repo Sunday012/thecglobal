@@ -26,22 +26,22 @@ export default function Giving() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-[#FAE8A1] py-20 px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-white py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div
           className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
         >
-          <div className="relative">
+          <div className="relative h-[700px]">
             <Image
-              src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758816/WhatsApp-Image-2024-02-19-at-03.16.21_gkmxj0.jpg"
+              src="/images/hug.jpg"
               alt="Church community giving"
               width={600}
               height={400}
-              className="rounded-2xl object-cover"
+              className="rounded-2xl object-cover h-full"
             />
           </div>
           <div>
-            <h2 className="text-6xl font-rubik font-bold text-[#272f31] mb-8">Giving</h2>
+            <h2 className="text-8xl font-montserrat tracking-tighter font-bold text-[#272f31] mb-8">Giving</h2>
             <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-6">
               We believe Jesus is a giver and not a taker. Not only has He given us life and breath, but by His death
               and resurrection, He defeated the sin that would rob us of both. So, when it comes to giving, we believe
@@ -51,7 +51,7 @@ export default function Giving() {
               Giving is worship—and our worship is a response to the extravagant grace and glory of God.
             </p>
             <div className="space-y-4">
-              <Button className="w-full bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium py-4 rounded-full text-lg tracking-wide">
+              <Button className="w-full bg-[#0A523B] hover:bg-[#0A523B]/80 h-[52px] text-white font-work-sans font-medium py-4 rounded-full text-lg tracking-wide">
                 Give Now
               </Button>
               <div className="flex space-x-4">

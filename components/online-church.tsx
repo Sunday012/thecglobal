@@ -26,17 +26,17 @@ export default function OnlineChurch() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-[#FAE8A1] py-20 px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section ref={sectionRef} className="py-20 px-6 lg:px-16">
+      <div className="max-w-7xl mx-auto bg-[#FAE8A1] rounded-2xl">
         <div
           className={`grid lg:grid-cols-2 gap-12 items-center transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
         >
-          <div>
-            <h2 className="text-6xl font-rubik font-bold text-[#272f31] mb-4">Join Us</h2>
-            <h3 className="text-4xl font-rubik italic text-[#272f31] mb-8">
-              in Church <span className="font-rubik not-italic">Online</span>
+          <div className="h-full flex flex-col items-end">
+            <h2 className="text-9xl font-montserrat font-bold text-[#272f31] mb-4 -mt-10">Join Us</h2>
+            <h3 className="text-6xl font-playfair non-italic text-[#272f31] mb-8">
+              in Church <span className="italic">Online</span>
             </h3>
-            <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-8">
+            <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-8 px-4 text-end">
               Join us every Sunday at 9:30a and 11:45a for our Houston Gatherings or 9:30a and 11:30a for our
               Springfield Gatherings at encounter.online.
             </p>
@@ -47,13 +47,13 @@ export default function OnlineChurch() {
               <a href="/contact">Contact Us</a>
             </Button>
           </div>
-          <div className="relative">
+          <div className="relative -mt-10 w-[500px] h-[600px]">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/images/church-sound.jpg"
               alt="Online church service"
-              width={600}
-              height={400}
-              className="rounded-2xl object-cover"
+              width={800}
+              height={800}
+              className="rounded-2xl object-cover h-full w-full"
             />
           </div>
         </div>

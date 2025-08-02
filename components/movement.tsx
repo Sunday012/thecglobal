@@ -30,10 +30,10 @@ export default function Movement() {
   ]
 
   return (
-    <section className="bg-[#FAE8A1] py-20 px-6 lg:px-8">
+    <section className="bg-white py-20 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-6xl font-rubik font-bold text-[#272f31] mb-16">
-          Around the <em className="font-rubik italic">Encounter Movement</em>
+          Around <em className="font-playfair italic font-medium">the Encounter Movement</em>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

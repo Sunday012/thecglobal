@@ -41,10 +41,10 @@ export default function WhatWeBelieve() {
             />
           </div>
           <div>
-            <p className="text-[#272f31]/70 font-work-sans text-sm uppercase tracking-wide mb-4">
+            <p className="text-[#272f31]/70 font-playfair text-sm uppercase tracking-wide mb-4">
               Our Theological Truths
             </p>
-            <h2 className="text-5xl font-rubik font-bold text-[#272f31] mb-8">What We Believe</h2>
+            <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-8">What We Believe</h2>
             <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-8">
               We live in shifting times but are rooted in eternal truths, the teachings of Holy Scripture. Here at The
               Encounter Center Church we are guided by certain foundational beliefs and shaping values.
