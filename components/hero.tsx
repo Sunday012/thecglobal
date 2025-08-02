@@ -25,18 +25,16 @@ export default function Hero() {
             {/* Main Title */}
             <h1 className="mb-8">
               <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-                For God.
+              Encounter God.
               </div>
               <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-                For The People.
+              Expand His Kingdom. Transform Your World.
               </div>
             </h1>
             
             {/* Description */}
             <p className="text-white/90 font-work-sans text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
-              Welcome to a place where the gospel is central and Jesus is always the lead story. We are a Jesus church
-              and want to gather in worship and scatter to shine His light and love throughout Houston, Springfield, and
-              beyond.
+            Welcome to The Encounter Center — where Christ is at the center, lives are transformed, and people are empowered to expand God’s kingdom in every sphere of life.
             </p>
             
             {/* CTA Button */}

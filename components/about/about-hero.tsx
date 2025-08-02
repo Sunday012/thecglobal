@@ -26,7 +26,7 @@ export default function AboutHero() {
 
   return (
     <section ref={sectionRef} className="bg-white pb-20 px-6 lg:px-8 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto mt-32">
+      <div className="max-w-7xl mx-auto mt-46">
         <div
           className={`grid lg:grid-cols-2 gap-12 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >

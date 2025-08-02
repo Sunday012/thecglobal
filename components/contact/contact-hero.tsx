@@ -54,7 +54,7 @@ export default function ContactHero() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6">
                 <h3 className="text-white font-montserrat font-bold text-2xl mb-2">Connect With Our Leadership</h3>
-                <p className="text-white/90 font-work-sans text-lg">Pastor John + Sarah Smith</p>
+                {/* <p className="text-white/90 font-work-sans text-lg">Pastor John + Sarah Smith</p> */}
               </div>
             </div>
           </div>

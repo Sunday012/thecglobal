@@ -42,25 +42,12 @@ export default function CareMinistries() {
               Learn More
             </Button>
           </div>
-          <div className="relative">
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-rubik font-bold text-gray-800 mb-2">Care & Support</h3>
-                <p className="text-gray-600 font-work-sans">
-                  We're here to walk alongside you in every season of life.
-                </p>
-              </div>
-            </div>
+          <div className="relative h-96 rounded-2xl overflow-hidden">
+            <img
+              src="/images/pastors.jpg"
+              alt="Care and Support"
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
       </div>

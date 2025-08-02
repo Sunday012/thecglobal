@@ -32,7 +32,7 @@ export default function GlobalPastor() {
         >
           <div className="relative">
             <Image
-              src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg"
+              src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758813/WhatsApp-Image-2024-02-19-at-03.14.43_zgruwp.jpg"
               alt="Pastor John and Sarah Smith"
               width={600}
               height={500}
@@ -42,14 +42,10 @@ export default function GlobalPastor() {
           <div>
             <p className="text-[#272f31]/70 font-playfair text-lg mb-4 italic">Global Pastor</p>
             <h2 className="text-5xl lg:text-6xl font-montserrat font-bold text-[#272f31] mb-8 leading-tight">
-              John + Sarah Smith
+            Pastor Dr. Michael Aladejana
             </h2>
             <p className="text-[#272f31] font-work-sans text-lg leading-relaxed">
-              Pastor John is the Visionary Architect and Director of The Encounter Center, comprised of Encounter
-              Conferences, The Encounter Center Church, Encounter Publishing and sixstepsrecords, and the founder of
-              Encounter Global Institute. Sarah is the Chief Strategist, Director of Operations and Artist Management
-              for sixstepsrecords, co-founder of the Encounter Movement, and leads The GROVE, a gathering for the women
-              of Houston and Springfield.
+            Pastor Dr. Michael Aladejana is the Lead Pastor and founder of The Encounter Center (TEC) and the TEC Leadership & Bible Institute (TLBI). A passionate preacher, teacher, and mentor, he is dedicated to raising Kingdom influencers who are saved, transformed, and sent. Blending ministry and marketplace impact as a medical doctor . Dr. Michael is committed to equipping believers to live out their God-given purpose in every sphere of life.
             </p>
           </div>
         </div>

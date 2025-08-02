@@ -34,8 +34,8 @@ export default function Locations() {
             Select a <em className="font-playfair italic">City</em>
           </h2>
           <p className="text-[#272f31] font-work-sans text-lg mb-16 max-w-3xl">
-            Our roots are in Houston and Springfield though we consider the world our neighborhood. Select a city below
-            to join us in person.
+          Our roots are in Houston and Springfield, but our heart beats for the nations.
+Though God has planted us in these cities, our mission extends to every place where people are hungry for His presence, and you are family no matter where you are.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-8">

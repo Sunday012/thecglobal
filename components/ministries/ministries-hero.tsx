@@ -27,7 +27,7 @@ export default function MinistriesHero() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative h-[70vh] bg-gray-200 flex items-center justify-center overflow-hidden rounded-3xl mx-8 mt-32">
+    <section ref={sectionRef} className="relative h-[70vh] bg-gray-200 flex items-center justify-center overflow-hidden rounded-3xl mx-8 mt-46">
       {/* Background Image */}
       <div className={`absolute rounded-3xl overflow-hidden transition-all duration-700 ease-in-out ${
         isHovered 

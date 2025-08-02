@@ -22,7 +22,7 @@ export default function LocationSelector() {
       address: "3075 Normandy Rd, Springfield, IL 62703",
       neighborhood: "Located near North Springfield",
       times: ["9:30A", "11:30A"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg",
     },
   ]
 

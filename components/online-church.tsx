@@ -37,8 +37,8 @@ export default function OnlineChurch() {
               in Church <span className="italic">Online</span>
             </h3>
             <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-8 px-4 text-end">
-              Join us every Sunday at 9:30a and 11:45a for our Houston Gatherings or 9:30a and 11:30a for our
-              Springfield Gatherings at encounter.online.
+            Be part of TEC wherever you are. Join our live services,and grow in faith from anywhere in the world.
+Sundays at 5:30 PM (Houston) | 5:00 PM (Springfield)
             </p>
             <Button
               asChild

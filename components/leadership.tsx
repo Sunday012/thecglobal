@@ -44,9 +44,9 @@ export default function Leadership() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-[#272f31]/70 font-work-sans text-sm uppercase tracking-wide mb-4">GLOBAL PASTOR</p>
-              <h3 className="text-4xl font-montserrat font-bold text-[#272f31] mb-6">Pastor John</h3>
+              <h3 className="text-4xl font-montserrat font-bold text-[#272f31] mb-6">Pastor Dr. Michael Aladejana</h3>
               <p className="text-[#272f31] font-work-sans text-lg leading-relaxed">
-              Our leadership is not just about authority; it's about serving, equipping, and empowering every member to discover their purpose and contribute to the collective mission. Together, we are not just leading a church; we are guiding a community on a supernatural journey of faith, love, and transformation.
+              Pastor Dr. Michael Aladejana is the Lead Pastor and founder of The Encounter Center (TEC) and the TEC Leadership & Bible Institute (TLBI). A passionate preacher, teacher, and mentor, he is dedicated to raising Kingdom influencers who are saved, transformed, and sent. Blending ministry and marketplace impact as a medical doctor . Dr. Michael is committed to equipping believers to live out their God-given purpose in every sphere of life
               </p>
             </div>
             <div className="relative">
