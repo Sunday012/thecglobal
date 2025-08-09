@@ -35,11 +35,11 @@ export default function WeAreJesusChurch() {
             <h2 className="text-6xl font-rubik font-bold text-gray-800 mb-4">We Are</h2>
             <h3 className="text-4xl font-rubik italic text-gray-700 mb-8">A Jesus Church</h3>
             <p className="text-gray-600 font-work-sans text-lg leading-relaxed mb-8">
-              A small tribe of His followers connected by our common faith and a deep desire to see our cities [Houston
-              and Springfield] come to know His power and beauty.
+              You were made to make a difference.
+Find your place on a team and use your gifts to serve God and others, with joy, excellence, and purpose.
             </p>
             <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide">
-              About Us
+              Join a Serve Team
             </Button>
           </div>
           <div className="relative">

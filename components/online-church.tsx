@@ -40,12 +40,20 @@ export default function OnlineChurch() {
             Be part of TEC wherever you are. Join our live services,and grow in faith from anywhere in the world.
 Sundays at 5:30 PM (Houston) | 5:00 PM (Springfield)
             </p>
+            <div className="flex items-end gap-4">
             <Button
               asChild
-              className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide"
+              className="bg-[#0A523B] h-[48px] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide"
             >
-              <a href="/contact">Contact Us</a>
+              <a href="/contact">Watch Online</a>
             </Button>
+            <Button
+              asChild
+              className="bg-[#F7B32B] h-[48px] hover:bg-[#F7B32B]/80 text-[#272f31] font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide mt-4"
+            >
+              <a href="/plan-visit">Plan Your Visit</a>
+            </Button>
+            </div>
           </div>
           <div className="relative -mt-10 w-[500px] h-[600px]">
             <Image

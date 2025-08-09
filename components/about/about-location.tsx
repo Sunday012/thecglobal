@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -13,18 +12,27 @@ export default function AboutLocations() {
   const locations = [
     {
       city: "Houston",
-      subtitle: "LOCATED AT THE ENCOUNTER CENTER",
+      subtitle: "JOIN US IN HOUSTON",
       description:
-        "Located in the heart of Houston, our Sunday gatherings are a space for you and your family to join in the fellowship of the people of God, be enriched by the teachings of the Word of God, and lift your voices in joyful song to the praises of God. We gather at 9:30a and 11:45a every Sunday at The Encounter Center.",
+        "Located in the heart of Houston, our Sunday gatherings are a space where you and your family can encounter God together, through heartfelt worship, powerful teaching, and genuine community.",
+      schedule: [
+        "Sunday at 5:30 PM – Worship Gathering",
+        "Tuesday at 7:30 PM – Bible Study"
+      ],
+      callToAction: "Come as you are. There's a seat for you. We can't wait to worship with you!",
       image:
         "/images/houston.jpg",
       address: "15000 Bellaire Blvd Unit W",
     },
     {
       city: "Springfield",
-      subtitle: "LOCATED AT THE ENCOUNTER CENTER",
+      subtitle: "JOIN US IN SPRINGFIELD",
       description:
-        "Located in Springfield, Illinois, our Sunday gatherings are a space for you and your family to join in the fellowship of the people of God, be enriched by the teachings of the Word of God, and lift your voices in joyful song to the praises of God. We gather at 9:30a and 11:30a every Sunday at The Encounter Center.",
+        "Located in the heart of Springfield, our Sunday gatherings are a space where you and your family can encounter God together, through heartfelt worship, powerful teaching, and genuine community.",
+      schedule: [
+        "Sunday at 5:00 PM – Worship Gathering"
+      ],
+      callToAction: "Come as you are. There's a seat for you. We can't wait to worship with you!",
       image: "/images/springfield.jpg",
       address: "3075 Normandy Rd",
     },
@@ -71,10 +79,18 @@ export default function AboutLocations() {
                 {current.subtitle}
               </p>
               <h3 className="text-5xl font-rubik font-bold text-[#272f31] mb-8">{current.city}</h3>
-              <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-8">{current.description}</p>
-              <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-3 rounded-full text-sm tracking-wide">
-                LEARN MORE
-              </Button>
+              <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-6">{current.description}</p>
+              
+              <div className="mb-6">
+                <p className="text-[#272f31] font-work-sans font-semibold text-lg mb-3">We meet every:</p>
+                {current.schedule.map((time, index) => (
+                  <p key={index} className="text-[#272f31] font-work-sans text-lg mb-2">
+                    <span className="font-semibold">{time.split(' – ')[0]}</span> – {time.split(' – ')[1]}
+                  </p>
+                ))}
+              </div>
+              
+              <p className="text-[#272f31] font-work-sans text-lg leading-relaxed">{current.callToAction}</p>
             </div>
             <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
               <Image

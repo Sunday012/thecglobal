@@ -31,7 +31,7 @@ export default function Header({ isHomePage = false }) {
 
   const navigationItems = [
     { name: "About", href: "/about" },
-    { name: "Ministries", href: "/ministries" },
+    { name: "Serve", href: "/ministries" },
     { name: "Leadership", href: "/leadership" },
     { name: "Contact", href: "/contact", icon: true },
     { name: "Donate", href: "/give" },

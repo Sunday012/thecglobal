@@ -1,43 +1,52 @@
 "use client"
-
 import { Plus, Minus } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export default function OurValues() {
+export default function OurCultureDNA() {
   const [isVisible, setIsVisible] = useState(false)
   const [expandedItems, setExpandedItems] = useState<number[]>([])
   const sectionRef = useRef<HTMLElement>(null)
 
   const values = [
     {
-      title: "Jesus is Our Lead Story",
+      title: "Jesus Always",
       content:
-        "Everything we do centers around Jesus Christ. He is not just part of our story - He is the main character, the beginning and the end, the reason we exist as a church community.",
+        "Everything starts and ends with Him. No hype, just Jesus.",
     },
     {
-      title: "The Gospel is Central",
+      title: "Word + Spirit",
       content:
-        "The good news of Jesus Christ's death and resurrection is at the heart of everything we believe and do. It shapes our worship, our community, and our mission to the world.",
+        "We teach truth. We flow with the Spirit. Both matters. Always.",
     },
     {
-      title: "Worship is a Lifestyle",
+      title: "Presence > Performance",
       content:
-        "Worship isn't confined to Sunday mornings. It's how we live every day - honoring God in our work, relationships, and daily choices. Every moment is an opportunity to worship.",
+        "We host God, not a show. If He's not in it, we don't want it.",
     },
     {
-      title: "Generosity is Normal",
+      title: "Disciples, Not Just Attenders",
       content:
-        "We believe in radical generosity because God has been radically generous to us. Giving of our time, talents, and treasures is not an obligation but a joyful response to God's grace.",
+        "We don't do passive Christianity. We raise leaders and send them out.",
     },
     {
-      title: "We Are Family",
+      title: "Excellence is Our Worship",
       content:
-        "The church is more than an organization - we're a family. We care for one another, celebrate together, and support each other through life's challenges and victories.",
+        "God gave His best, we give ours. From music to media to greeting at the door.",
     },
     {
-      title: "We>Me",
+      title: "Family Vibes",
       content:
-        "Community comes before individual preferences. We prioritize the good of the whole over personal desires, understanding that we're stronger together than apart.",
+        "We do life together. Real love. Real accountability. Real growth.",
+    },
+    {
+      title: "Bold Faith. Real Power.",
+      content:
+        "Miracles, healing, breakthrough? We expect them.",
+    },
+    {
+      title: "Kingdom Everywhere",
+      content:
+        "Church isn't just a Sunday thing. We take Jesus into every space, school, work, media, business, and more.",
     },
   ]
 
@@ -68,8 +77,12 @@ export default function OurValues() {
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-[#272f31]/70 font-rubik italic text-2xl mb-12">This is How We Describe Us...</h2>
-
+          <h2 className="text-[#272f31] font-rubik font-bold text-5xl lg:text-6xl mb-6">Our Culture & DNA</h2>
+          <h3 className="text-[#272f31]/70 font-rubik italic text-2xl mb-8">What makes us, us.</h3>
+          <p className="text-[#272f31] font-work-sans text-xl mb-16 leading-relaxed">
+            We're not just a church. We're a movement marked by presence, power, and purpose. Here's what we bleed:
+          </p>
+          
           <div className="space-y-8">
             {values.map((value, index) => (
               <div key={index} className="border-b border-[#272f31]/20 pb-8">
@@ -81,9 +94,9 @@ export default function OurValues() {
                     <span className="text-[#272f31]/40 font-rubik text-6xl font-light">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="text-[#272f31] font-rubik font-bold text-2xl lg:text-3xl group-hover:text-[#0A523B] transition-colors">
+                    <h4 className="text-[#272f31] font-rubik font-bold text-2xl lg:text-3xl group-hover:text-[#0A523B] transition-colors">
                       {value.title}
-                    </h3>
+                    </h4>
                   </div>
                   <div className="text-[#272f31] group-hover:text-[#0A523B] transition-colors">
                     {expandedItems.includes(index) ? <Minus size={24} /> : <Plus size={24} />}

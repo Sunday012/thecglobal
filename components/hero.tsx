@@ -27,8 +27,11 @@ export default function Hero() {
               <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
               Encounter God.
               </div>
+              <div className="text-white font-montserrat text-nowrap font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
+              Expand His Kingdom. 
+              </div>
               <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-              Expand His Kingdom. Transform Your World.
+              Transform Your World.
               </div>
             </h1>
             

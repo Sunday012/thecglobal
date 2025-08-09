@@ -6,27 +6,27 @@ export default function Movement() {
     {
       image:
         "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758815/WhatsApp-Image-2024-02-19-at-03.15.59_yr6rbv.jpg",
-      title: "Encounter 2026",
-      subtitle: "January 13, 2026",
+      title: "MetCon25",
+      subtitle: "",
     },
     {
       image:
         "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758813/WhatsApp-Image-2024-02-19-at-03.14.43_zgruwp.jpg",
-      title: "EncounterEquip",
-      subtitle: "KNOWING GOD ABOVE ALL ELSE",
+      title: "Kingdom Charge Devotional",
+      subtitle: "",
     },
     {
       image:
         "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758813/WhatsApp-Image-2024-02-19-at-03.16.43_flkzu9.jpg",
-      title: "Encounter Camp",
-      subtitle: "JULY 14-16, 2025",
+      title: "Grace Amplified Tour 2026",
+      subtitle: "",
     },
-    {
-      image:
-        "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
-      title: "NEW SINGLE",
-      subtitle: "LISTEN NOW",
-    },
+    // {
+    //   image:
+    //     "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
+    //   title: "NEW SINGLE",
+    //   subtitle: "LISTEN NOW",
+    // },
   ]
 
   return (
@@ -36,7 +36,7 @@ export default function Movement() {
           Around <em className="font-playfair italic font-medium">the Encounter Movement</em>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {movementItems.map((item, index) => (
             <div key={index} className="relative group cursor-pointer">
               <div className="relative aspect-square rounded-2xl overflow-hidden">

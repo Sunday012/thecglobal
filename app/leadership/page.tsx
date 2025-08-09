@@ -15,8 +15,8 @@ export default function LeadershipPage() {
       <LeadershipHero />
       <GlobalPastor />
       <LocationPastors />
-      <OurBoard />
-      <LeadershipValues />
+      {/* <OurBoard />
+      <LeadershipValues /> */}
       <Footer />
     </main>
   )

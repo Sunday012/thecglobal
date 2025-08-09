@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
 
 export default function WhatWeBelieve() {
   const [isVisible, setIsVisible] = useState(false)
@@ -49,9 +50,9 @@ export default function WhatWeBelieve() {
               We live in shifting times but are rooted in eternal truths, the teachings of Holy Scripture. Here at The
               Encounter Center Church we are guided by certain foundational beliefs and shaping values.
             </p>
-            <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-3 rounded-full text-sm tracking-wide">
+            <Link href="/beliefs" className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-3 rounded-full text-sm tracking-wide">
               LEARN MORE
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

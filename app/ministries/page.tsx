@@ -16,8 +16,8 @@ export default function MinistriesPage() {
       <Header />
       <MinistriesHero />
       <WeAreJesusChurch />
-      <UpcomingEvents />
       <NextSteps />
+      <UpcomingEvents />
       <LocationSelector />
       <FamilyMinistries />
       <CareMinistries />

@@ -34,19 +34,18 @@ export default function AboutHero() {
             <h1 className="text-8xl lg:text-9xl font-montserrat font-bold text-[#272f31] mb-2 leading-none">US</h1>
             <div className="space-y-6 flex flex-col items-center">
               <h2 className="text-4xl lg:text-6xl font-playfair italic text-[#272f31] leading-tight">
-                Glory of God.
+                Real People.
                 <br />
-                Radical Grace.
+                Real Encounters.
                 <br />
-                Extravagant
-                <br />
-                Worship.
+                Real God.
               </h2>
               <p className="text-[#272f31] font-work-sans text-lg leading-relaxed w-[60%]">
-                We are a Jesus Church. A small tribe of His followers connected by our common faith and a deep desire to
-                see our cities [Houston and Springfield] come to know His power and beauty. We are not perfect. But
-                Jesus is. Thankfully, we are a Jesus church and want to gather in worship and scatter to shine His light
-                and love throughout our communities and beyond.
+                We are a Christ-centered church with one mission:
+To see all men saved, transformed, and sent.
+We exist so people from every background, story, and season can experience the transformative power of God’s love—not religion, not routine. At TEC, every gathering is an invitation to truly know Him. Every moment is sacred. Every heart matters.
+Jesus is the center of it all. We don’t build around personalities or preferences, but around His finished work.
+Our roots are currently in Houston, Texas, and Springfield, Illinois—and we believe this is just the beginning.
               </p>
             </div>
           </div>

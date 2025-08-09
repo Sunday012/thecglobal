@@ -47,9 +47,9 @@ export default function AboutUs() {
             Our church is more than a place, it's a people in every place living for the One whose fame outshines every
             name. This is US. The core values + standards that guide our tribe in everything we do.
           </p>
-          <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide">
+          {/* <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide">
             Download US booklet
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

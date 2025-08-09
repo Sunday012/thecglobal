@@ -82,7 +82,7 @@ export default function MinistriesHero() {
           <h1 className={`text-8xl lg:text-[140px] font-montserrat tracking-tighter font-bold leading-none transition-colors duration-500 ease-in-out ${
             isHovered ? "text-white" : "text-black"
           }`}>
-            Join Us Sunday
+            Join a Serve Team
           </h1>
         </div>
       </div>
