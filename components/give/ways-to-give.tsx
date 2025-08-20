@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
 
 export default function WaysToGive() {
   const [isVisible, setIsVisible] = useState(false)
@@ -16,12 +17,6 @@ export default function WaysToGive() {
         "CONNECT is a safe and easy way to invest in all God is doing through our House here at The Encounter Center Church. Click the link below to create an account or sign into your existing one, and you can start managing your giving online.",
       button: "RETURNING GIVERS",
       hasButton: true,
-    },
-    {
-      title: "Text to Give",
-      description:
-        "You can give to The Encounter Center Church using your mobile phone! Give instantly from your credit/debit card with a single text message. Send a text with any amount and ECC to 45777. (For example, 50 ECC)",
-      hasButton: false,
     },
     {
       title: "Gifts By Mail",
@@ -111,11 +106,19 @@ export default function WaysToGive() {
                           <p className="text-[#272f31]/70 font-work-sans text-lg leading-relaxed mb-8 whitespace-pre-line">
                             {method.description}
                           </p>
+                          <div className="mb-5">
                           {method.extraContent}
+                          </div>
                           {method.hasButton && (
-                            <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide mt-6">
-                              {method.button}
-                            </Button>
+                            method.button === "CONTACT US" ? (
+                              <Link href="/contact" className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide mt-6">
+                                  {method.button}
+                              </Link>
+                            ) : (
+                              <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide mt-6">
+                                {method.button}
+                              </Button>
+                            )
                           )}
                         </div>
                       </div>

@@ -55,29 +55,29 @@ export default function ContactCTA() {
             <p className="text-white/70 font-work-sans text-sm mb-6 uppercase tracking-wide">Follow Us</p>
             <div className="flex justify-center space-x-6">
               <a
-                href="#"
+                href="https://www.facebook.com/share/19evVQ62Su/?mibextid=wwXIfr"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#0A523B] transition-all duration-300 hover:scale-110"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/tec.houston?igsh=emt6NnZvaGswZjdj"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#0A523B] transition-all duration-300 hover:scale-110"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://youtube.com/@theencountercenterglobal?feature=shared"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#0A523B] transition-all duration-300 hover:scale-110"
               >
                 <Youtube size={20} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white hover:text-[#0A523B] transition-all duration-300 hover:scale-110"
               >
                 <Twitter size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

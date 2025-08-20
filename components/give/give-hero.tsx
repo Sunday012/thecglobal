@@ -51,9 +51,16 @@ export default function GiveHero() {
             God is moving in powerful ways in our midst. Thank you for being a part of all that He is doing in and
             through our House in these days.
           </p>
-          <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide">
-            GIVE ONLINE
-          </Button>
+          <a
+            href="https://give.tithe.ly/?formId=030ed140-b168-4d91-a818-635037345c77"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-4 rounded-full text-lg tracking-wide">
+              GIVE ONLINE
+            </Button>
+          </a>
         </div>
       </div>
     </section>

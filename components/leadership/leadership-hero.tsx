@@ -39,7 +39,7 @@ export default function LeadershipHero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center mt-28">
+      <div className="relative z-10 h-full flex items-center mt-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="max-w-2xl ml-auto">
             <div
@@ -48,11 +48,11 @@ export default function LeadershipHero() {
               <h1 className="text-6xl lg:text-7xl font-montserrat font-bold text-white mb-8 leading-tight">
                 Our Leadership
               </h1>
-              <p className="text-white font-work-sans text-lg leading-relaxed max-w-xl">
+              {/* <p className="text-white font-work-sans text-lg leading-relaxed max-w-xl">
                 We may be biased, but we think we have the very best team of people around leading our House week in and
                 week out! The Encounter Center Church is led by Pastor John + Sarah Smith, who are supported by an
                 incredible team of some of the most gifted, creative, winsome and hard-working people around.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

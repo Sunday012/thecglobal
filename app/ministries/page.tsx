@@ -19,7 +19,7 @@ export default function MinistriesPage() {
       <NextSteps />
       <UpcomingEvents />
       <LocationSelector />
-      <FamilyMinistries />
+      {/* <FamilyMinistries /> */}
       <CareMinistries />
       <Footer />
     </main>

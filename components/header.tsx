@@ -34,7 +34,7 @@ export default function Header({ isHomePage = false }) {
     { name: "Serve", href: "/ministries" },
     { name: "Leadership", href: "/leadership" },
     { name: "Contact", href: "/contact", icon: true },
-    { name: "Donate", href: "/give" },
+    { name: "Give", href: "/give" },
   ]
 
   const toggleMenu = () => {
@@ -91,11 +91,11 @@ export default function Header({ isHomePage = false }) {
 
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
-              <Button className={`hover:bg-[#0A523B]/80 font-work-sans font-medium px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-500 ${
+              {/* <Button className={`hover:bg-[#0A523B]/80 font-work-sans font-medium px-6 py-2 rounded-full text-sm tracking-wide transition-all duration-500 ${
                 isScrolled ? 'bg-[#0A523B] text-white' : 'bg-white/20 text-white border border-white/30 backdrop-blur-sm'
               }`}>
                 UPCOMING EVENTS
-              </Button>
+              </Button> */}
 
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -271,7 +271,7 @@ export default function Header({ isHomePage = false }) {
               </div>
 
               {/* The Encounter Movement */}
-              <div>
+              {/* <div>
                 <h3 className="text-gray-400 font-work-sans text-sm uppercase tracking-wide mb-6">
                   The Encounter Movement
                 </h3>
@@ -322,7 +322,7 @@ export default function Header({ isHomePage = false }) {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
             {/* Featured Content */}

@@ -13,28 +13,28 @@ export default function NextSteps() {
       title: "Prayer & Evangelism",
       tagline: "Fueling revival. Reaching the lost.",
       description: "We stand in the gap through bold intercession and step out in faith to share the love of Jesus. Whether praying behind the scenes or hitting the streets, we believe every soul matters.",
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg",
+      image: "/images/prayer.jpg",
     },
     {
       category: "CREATIVE EXCELLENCE",
       title: "Media & Production",
       tagline: "Creativity with a purpose.",
       description: "We capture moments, tell stories, and support every experience with excellence, both in-house and online. From sound to visuals to live broadcasts, we use our gifts to amplify the message of Jesus.",
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758816/WhatsApp-Image-2024-02-19-at-03.16.21_gkmxj0.jpg",
+      image: "/images/media.jpg",
     },
     {
       category: "WORSHIP & MUSIC",
       title: "TEC Voices",
       tagline: "Revealing Jesus through sound and Spirit.",
       description: "Our worship team leads the church into God's presence through anointed music and heartfelt worship. We believe worship is both a lifestyle and a ministry that transforms hearts.",
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
+      image: "/images/voices.jpg",
     },
     {
       category: "WOMEN'S MINISTRY",
       title: "Her Haven",
       tagline: "A safe space for every woman to grow and thrive.",
       description: "Her Haven exists to build up strong women of the Word, equipped for every season of life and service. We gather, grow, and go in grace and power.",
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758815/WhatsApp-Image-2024-02-19-at-03.15.59_yr6rbv.jpg",
+      image: "/images/haven.jpg",
     },
     {
       category: "STUDENT MINISTRY",
@@ -55,7 +55,7 @@ export default function NextSteps() {
       title: "Hospitality",
       tagline: "Big smiles, warm hellos, feeling right at home.",
       description: "We're all about making you feel welcomed as family! From the moment you walk in, our team is here to greet you with love and make sure you leave feeling cared for.",
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
+      image: "/images/hospitality.jpg",
     },
     {
       category: "CHILDREN'S MINISTRY",
@@ -63,6 +63,13 @@ export default function NextSteps() {
       tagline: "Where little hearts grow BIG in Jesus!",
       description: "Fun, safe, and packed with Bible stories, games, and laughter, our Kid Min is the place kids can be kids while learning about God's amazing love.",
       image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1754761108/erika-giraud-4EFeD-VTgu4-unsplash_lrjbgv.jpg",
+    },
+    {
+      category: "FORGED MEN",
+      title: "Forged Men",
+      tagline: "Brotherhood forged in faith and purpose.",
+      description: "The men’s ministry of TEC is a brotherhood where faith, character, and purpose are shaped by God’s Word and sharpened through brotherhood. We equip men to lead with vision, stand with conviction, and build a lasting legacy. “As iron sharpens iron, so one man sharpens another.” – Proverbs 27:17",
+      image: "/images/forged.jpg",
     },
   ]
 

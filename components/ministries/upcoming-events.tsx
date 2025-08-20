@@ -14,16 +14,68 @@ export default function UpcomingEvents() {
       title: "MetCon25",
       time: "All Day Event",
       dates: "February 15-17, 2025",
+      dateRange: { start: new Date("2025-02-15"), end: new Date("2025-02-17") },
       tags: ["CONFERENCE", "ALL LOCATIONS"],
-      featured: true,
+      featured: false,
     },
     {
-      date: "01",
-      month: "JAN",
-      title: "Kingdom Charge Devotional",
-      time: "Daily",
-      dates: "Start your year with purpose and power",
-      tags: ["DEVOTIONAL", "DAILY", "ALL LOCATIONS"],
+      date: "28",
+      month: "AUG",
+      title: "CAMPUS INVASION",
+      time: "7:00pm - 9:00pm",
+      dates: "28th August",
+      dateRange: { start: new Date("2024-08-28"), end: new Date("2024-08-28") },
+      tags: ["CAMPUS", "YOUTH", "ALL LOCATIONS"],
+      featured: false,
+    },
+    {
+      date: "30",
+      month: "AUG",
+      title: "Faith & Fitness",
+      time: "9:00am - 11:00am",
+      dates: "30th August",
+      dateRange: { start: new Date("2024-08-30"), end: new Date("2024-08-30") },
+      tags: ["WELLNESS", "FITNESS", "ALL LOCATIONS"],
+      featured: false,
+    },
+    {
+      date: "30",
+      month: "AUG",
+      title: "Forged Men Talk",
+      time: "",
+      dates: "30th August",
+      dateRange: { start: new Date("2024-08-30"), end: new Date("2024-08-30") },
+      tags: ["MEN", "TALK", "ALL LOCATIONS"],
+      featured: false,
+    },
+    {
+      date: "29",
+      month: "AUG",
+      title: "Friday Evening Encounter",
+      time: "7:00pm - 9:00pm",
+      dates: "29th August",
+      dateRange: { start: new Date("2024-08-29"), end: new Date("2024-08-29") },
+      tags: ["ENCOUNTER", "FRIDAY", "ALL LOCATIONS"],
+      featured: false,
+    },
+    {
+      date: "04",
+      month: "OCT",
+      title: "7 Days Weight Of Glory Fast",
+      time: "",
+      dates: "October 04 - October 11",
+      dateRange: { start: new Date("2024-10-04"), end: new Date("2024-10-11") },
+      tags: ["FAST", "PRAYER", "ALL LOCATIONS"],
+      featured: false,
+    },
+    {
+      date: "11",
+      month: "OCT",
+      title: "7Hour Prayer Charge",
+      time: "7:00pm - 2:00am",
+      dates: "October 11",
+      dateRange: { start: new Date("2024-10-11"), end: new Date("2024-10-11") },
+      tags: ["PRAYER", "CHARGE", "ALL LOCATIONS"],
       featured: false,
     },
     {
@@ -32,11 +84,52 @@ export default function UpcomingEvents() {
       title: "Grace Amplified Tour 2026",
       time: "7:00p - 10:00p CT",
       dates: "Multi-city tour starts March 2026",
+      dateRange: { start: new Date("2026-03-25"), end: new Date("2026-03-25") },
       tags: ["TOUR", "WORSHIP", "MULTI-CITY"],
       featured: false,
     },
   ]
 
+  // Function to determine the featured event
+  const getFeaturedEvent = () => {
+    const today = new Date()
+    today.setHours(0, 0, 0, 0) // Reset time for accurate date comparison
+    
+    // First, check if any event is happening today or during its period
+    const currentEvent = events.find(event => {
+      const startDate = new Date(event.dateRange.start)
+      const endDate = new Date(event.dateRange.end)
+      startDate.setHours(0, 0, 0, 0)
+      endDate.setHours(23, 59, 59, 999)
+      
+      return today >= startDate && today <= endDate
+    })
+    
+    if (currentEvent) {
+      return currentEvent
+    }
+    
+    // Find the next upcoming event (events that haven't ended yet)
+    const upcomingEvents = events.filter(event => {
+      const endDate = new Date(event.dateRange.end)
+      endDate.setHours(23, 59, 59, 999)
+      return endDate >= today // Event hasn't ended yet
+    })
+    
+    if (upcomingEvents.length > 0) {
+      // Sort by start date and return the closest one
+      upcomingEvents.sort((a, b) => a.dateRange.start.getTime() - b.dateRange.start.getTime())
+      return upcomingEvents[0]
+    }
+    
+    // If all events have passed, find the next event by date (regardless of year)
+    const allEventsSorted = [...events].sort((a, b) => a.dateRange.start.getTime() - b.dateRange.start.getTime())
+    return allEventsSorted[0]
+  }
+
+  const featuredEvent = getFeaturedEvent()
+  const otherEvents = events.filter(event => event !== featuredEvent)
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -62,7 +155,7 @@ export default function UpcomingEvents() {
         >
           <h2 className="text-8xl font-rubik font-bold text-gray-800 mb-16">Upcoming</h2>
           
-          {/* Featured Event - MetCon25 */}
+          {/* Featured Event - Dynamic */}
           <div className="mb-12">
             <div className="bg-gradient-to-r from-[#0A523B] to-[#272f31] rounded-2xl p-8 shadow-lg relative overflow-hidden text-white">
               <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/10 to-transparent"></div>
@@ -72,12 +165,15 @@ export default function UpcomingEvents() {
                     FEATURED EVENT
                   </span>
                   <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-work-sans">
-                    FEB 15-17
+                    {featuredEvent.month} {featuredEvent.date}
                   </span>
                 </div>
-                <h3 className="text-5xl font-rubik font-bold text-white mb-4">MetCon25</h3>
+                <h3 className="text-5xl font-rubik font-bold text-white mb-4">{featuredEvent.title}</h3>
                 <p className="text-white/90 font-work-sans text-xl mb-8 max-w-2xl">
-                  Join us for our flagship conference experience. Three days of powerful worship, transformative teaching, and life-changing encounters with God.
+                  {featuredEvent.title === "MetCon25" 
+                    ? "Join us for our flagship conference experience. Three days of powerful worship, transformative teaching, and life-changing encounters with God."
+                    : `Join us for ${featuredEvent.title}. ${featuredEvent.time ? `Event time: ${featuredEvent.time}` : "Don't miss this special event!"}`
+                  }
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button className="bg-white text-[#0A523B] hover:bg-white/90 font-work-sans font-bold px-8 py-3 rounded-full text-base tracking-wide">
@@ -93,7 +189,7 @@ export default function UpcomingEvents() {
 
           {/* Events List */}
           <div className="space-y-6">
-            {events.slice(1).map((event, index) => (
+            {otherEvents.map((event, index) => (
               <div
                 key={index}
                 className="flex items-center gap-6 p-6 bg-white rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-y-1"

@@ -34,7 +34,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
                   Our Story
@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/beliefs"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
                   Our Beliefs
@@ -96,7 +96,7 @@ export default function Footer() {
           {/* The Encounter Movement */}
           <div>
             <h3 className="text-[#272f31]/70 font-work-sans text-sm uppercase tracking-wide mb-4">
-              The Encounter Movement
+              Upcoming Events
             </h3>
             <ul className="space-y-3">
               <li>
@@ -104,7 +104,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
-                  Encounter Conferences
+                  Friday Evening Encounter
                 </a>
               </li>
               <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
-                  sixstepsrecords
+                  Forged Men Talk
                 </a>
               </li>
               <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
-                  Encounter Equip
+                  7 Days Weight Of Glory Fast
                 </a>
               </li>
               <li>
@@ -128,7 +128,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
-                  Encounter Publishing
+                  7Hour Prayer Charge
                 </a>
               </li>
               <li>
@@ -136,7 +136,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
                 >
-                  Encounter Resources
+                  Grace Amplified Tour 2026
                 </a>
               </li>
             </ul>
@@ -159,13 +159,13 @@ export default function Footer() {
               </a>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
+              <a href="https://www.facebook.com/share/19evVQ62Su/?mibextid=wwXIfr" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
+              <a href="https://www.instagram.com/tec.houston?igsh=emt6NnZvaGswZjdj" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
+              <a href="https://youtube.com/@theencountercenterglobal?feature=shared" className="text-[#272f31]/60 hover:text-[#272f31] transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
