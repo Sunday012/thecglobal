@@ -42,13 +42,14 @@ Find your place on a team and use your gifts to serve God and others, with joy, 
               Join a Serve Team
             </Button>
           </div>
-          <div className="relative">
+          <div className="relative h-96 w-full md:h-[500px] flex items-center">
             <Image
-              src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758815/WhatsApp-Image-2024-02-19-at-03.15.42_z0nnkl.jpg"
+              src="/images/baby.jpg"
               alt="Church worship with raised hands"
-              width={600}
-              height={400}
-              className="rounded-2xl object-cover"
+              fill
+              className="rounded-2xl object-cover object-center"
+              sizes="(min-width: 1024px) 600px, 100vw"
+              priority
             />
           </div>
         </div>

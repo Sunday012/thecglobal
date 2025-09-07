@@ -24,22 +24,31 @@ export default function VisionMission() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-white py-20 px-6 lg:px-8">
+    <section
+      ref={sectionRef}
+      className="bg-white py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div
-          className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`transition-all duration-1000 ${
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
         >
-          <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-16 text-center">Our Vision & Mission</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-montserrat font-bold text-[#272f31] mb-8 sm:mb-12 md:mb-16 text-center">
+            Our Vision & Mission
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             <div>
-              <div className="space-y-12">
+              <div className="space-y-10 sm:space-y-12">
                 {/* Vision Section */}
                 <div>
-                  <h3 className="text-3xl font-rubik font-bold text-[#272f31] mb-6">
+                  <h3 className="text-2xl sm:text-3xl font-rubik font-bold text-[#272f31] mb-4 sm:mb-6">
                     Our Vision
                   </h3>
-                  <div className="space-y-6 text-[#272f31] font-work-sans text-lg leading-relaxed">
+                  <div className="space-y-4 sm:space-y-6 text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed">
                     <p>
                       To see lives radically transformed by the presence of God and the power of the Gospel.
                     </p>
@@ -55,10 +64,10 @@ export default function VisionMission() {
 
                 {/* Mission Section */}
                 <div>
-                  <h3 className="text-3xl font-rubik font-bold text-[#272f31] mb-6">
+                  <h3 className="text-2xl sm:text-3xl font-rubik font-bold text-[#272f31] mb-4 sm:mb-6">
                     Our Mission
                   </h3>
-                  <div className="space-y-6 text-[#272f31] font-work-sans text-lg leading-relaxed">
+                  <div className="space-y-4 sm:space-y-6 text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed">
                     <p className="font-semibold">
                       To see all men saved, transformed, and sent.
                     </p>
@@ -71,13 +80,14 @@ export default function VisionMission() {
               </div>
             </div>
 
-            <div className="h-96 md:h-[500px] relative">
+            <div className="relative w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] flex items-center">
               <Image
-                src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg"
+                src="/images/believe-two.jpg"
                 alt="Church community gathering"
-                width={600}
-                height={800}
+                fill
                 className="rounded-2xl object-cover w-full h-full"
+                sizes="(min-width: 1024px) 600px, 100vw"
+                priority
               />
             </div>
           </div>

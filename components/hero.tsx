@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full">
+    <section className="relative min-h-[80vh] h-screen w-full flex items-center">
       {/* Full-Screen Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -13,37 +13,38 @@ export default function Hero() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
       
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full">
-          <div className="max-w-2xl  mt-32">
+      <div className="relative z-10 h-full flex items-center w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 w-full">
+          <div className="max-w-2xl mt-24 sm:mt-32">
             {/* Main Title */}
-            <h1 className="mb-8">
-              <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-              Encounter God.
+            <h1 className="mb-6 sm:mb-8">
+              <div className="text-white font-montserrat font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
+                Encounter God.
               </div>
-              <div className="text-white font-montserrat text-nowrap font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-              Expand His Kingdom. 
+              <div className="text-white font-montserrat font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter whitespace-nowrap">
+                Expand His Kingdom. 
               </div>
-              <div className="text-white font-montserrat font-bold text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
-              Transform Your World.
+              <div className="text-white font-montserrat font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter">
+                Transform Your World.
               </div>
             </h1>
             
             {/* Description */}
-            <p className="text-white/90 font-work-sans text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
-            Welcome to The Encounter Center — where Christ is at the center, lives are transformed, and people are empowered to expand God’s kingdom in every sphere of life.
+            <p className="text-white/90 font-work-sans text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-xl">
+              Welcome to The Encounter Center — where Christ is at the center, lives are transformed, and people are empowered to expand God’s kingdom in every sphere of life.
             </p>
             
             {/* CTA Button */}
             <Button
               size="lg"
-              className="bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm h-[52px] text-white font-work-sans font-medium px-8 py-4 rounded-full text-base tracking-wide transition-all duration-300"
+              className="bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm h-[48px] sm:h-[52px] text-white font-work-sans font-medium px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base tracking-wide transition-all duration-300"
             >
               LEARN MORE
             </Button>

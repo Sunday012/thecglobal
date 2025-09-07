@@ -46,10 +46,10 @@ export default function ContactHero() {
           <div className="mb-16">
             <div className="relative aspect-video max-w-4xl rounded-2xl overflow-hidden">
               <Image
-                src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg"
+                src="/images/leader.jpg"
                 alt="Pastor John and Sarah Smith - Connect with our leadership team"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6">

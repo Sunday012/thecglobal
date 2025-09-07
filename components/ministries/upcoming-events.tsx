@@ -148,38 +148,38 @@ export default function UpcomingEvents() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-gray-50 py-20 px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-8xl font-rubik font-bold text-gray-800 mb-16">Upcoming</h2>
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-rubik font-bold text-gray-800 mb-8 sm:mb-12 md:mb-16">Upcoming</h2>
           
           {/* Featured Event - Dynamic */}
-          <div className="mb-12">
-            <div className="bg-gradient-to-r from-[#0A523B] to-[#272f31] rounded-2xl p-8 shadow-lg relative overflow-hidden text-white">
+          <div className="mb-8 sm:mb-12">
+            <div className="bg-gradient-to-r from-[#0A523B] to-[#272f31] rounded-2xl p-4 sm:p-8 shadow-lg relative overflow-hidden text-white">
               <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/10 to-transparent"></div>
               <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-work-sans font-semibold">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-2 sm:mb-4">
+                  <span className="bg-white/20 backdrop-blur-sm text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-work-sans font-semibold">
                     FEATURED EVENT
                   </span>
-                  <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-work-sans">
+                  <span className="bg-white/20 backdrop-blur-sm text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-work-sans">
                     {featuredEvent.month} {featuredEvent.date}
                   </span>
                 </div>
-                <h3 className="text-5xl font-rubik font-bold text-white mb-4">{featuredEvent.title}</h3>
-                <p className="text-white/90 font-work-sans text-xl mb-8 max-w-2xl">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-rubik font-bold text-white mb-2 sm:mb-4">{featuredEvent.title}</h3>
+                <p className="text-white/90 font-work-sans text-base sm:text-lg md:text-xl mb-4 sm:mb-8 max-w-2xl">
                   {featuredEvent.title === "MetCon25" 
                     ? "Join us for our flagship conference experience. Three days of powerful worship, transformative teaching, and life-changing encounters with God."
                     : `Join us for ${featuredEvent.title}. ${featuredEvent.time ? `Event time: ${featuredEvent.time}` : "Don't miss this special event!"}`
                   }
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <Button className="bg-white text-[#0A523B] hover:bg-white/90 font-work-sans font-bold px-8 py-3 rounded-full text-base tracking-wide">
+                <div className="flex flex-wrap gap-2 sm:gap-4">
+                  <Button className="bg-white text-[#0A523B] hover:bg-white/90 font-work-sans font-bold px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-base tracking-wide">
                     REGISTER NOW
                   </Button>
-                  <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 font-work-sans font-medium px-8 py-3 rounded-full text-base tracking-wide bg-transparent">
+                  <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 font-work-sans font-medium px-6 sm:px-8 py-2.5 sm:py-3 rounded-full text-sm sm:text-base tracking-wide bg-transparent">
                     LEARN MORE
                   </Button>
                 </div>
@@ -188,32 +188,32 @@ export default function UpcomingEvents() {
           </div>
 
           {/* Events List */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {otherEvents.map((event, index) => (
               <div
                 key={index}
-                className="flex items-center gap-6 p-6 bg-white rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 p-4 sm:p-6 bg-white rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-y-1"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-gray-50 rounded-2xl flex flex-col items-center justify-center">
-                    <span className="text-2xl font-rubik font-bold text-gray-800">{event.date}</span>
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-50 rounded-2xl flex flex-col items-center justify-center">
+                    <span className="text-xl sm:text-2xl font-rubik font-bold text-gray-800">{event.date}</span>
                     <span className="text-xs font-work-sans uppercase tracking-wide text-gray-500">{event.month}</span>
                   </div>
                 </div>
                 
                 <div className="flex-1">
-                  <h4 className="text-2xl font-rubik font-bold text-gray-800 mb-2">
+                  <h4 className="text-lg sm:text-2xl font-rubik font-bold text-gray-800 mb-1 sm:mb-2">
                     {event.title}
                   </h4>
-                  <p className="text-lg text-gray-600 mb-1 font-work-sans">{event.time}</p>
-                  <p className="text-sm text-gray-500 font-work-sans">{event.dates}</p>
+                  <p className="text-base sm:text-lg text-gray-600 mb-0.5 sm:mb-1 font-work-sans">{event.time}</p>
+                  <p className="text-xs sm:text-sm text-gray-500 font-work-sans">{event.dates}</p>
                 </div>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1 sm:gap-2 mt-2 sm:mt-0">
                   {event.tags.map((tag, tagIndex) => (
                     <span
                       key={tagIndex}
-                      className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-work-sans uppercase tracking-wide"
+                      className="px-2 sm:px-3 py-0.5 sm:py-1 bg-gray-100 text-gray-600 rounded-full text-[10px] sm:text-xs font-work-sans uppercase tracking-wide"
                     >
                       {tag}
                     </span>
@@ -224,18 +224,20 @@ export default function UpcomingEvents() {
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-center items-center gap-8 mt-16">
-            <button className="p-3 text-gray-400 hover:text-gray-600 transition-colors">
-              <ChevronLeft size={32} />
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-8 sm:mt-16">
+            <button className="p-2 sm:p-3 text-gray-400 hover:text-gray-600 transition-colors">
+              <ChevronLeft size={24} className="sm:hidden" />
+              <ChevronLeft size={32} className="hidden sm:block" />
             </button>
             <Button
               variant="outline"
-              className="border-gray-300 text-gray-600 hover:bg-gray-50 font-work-sans font-medium py-3 px-8 rounded-full bg-white"
+              className="border-gray-300 text-gray-600 hover:bg-gray-50 font-work-sans font-medium py-2.5 sm:py-3 px-6 sm:px-8 rounded-full bg-white text-sm sm:text-base"
             >
               SEE ALL EVENTS
             </Button>
-            <button className="p-3 text-gray-400 hover:text-gray-600 transition-colors">
-              <ChevronRight size={32} />
+            <button className="p-2 sm:p-3 text-gray-400 hover:text-gray-600 transition-colors">
+              <ChevronRight size={24} className="sm:hidden" />
+              <ChevronRight size={32} className="hidden sm:block" />
             </button>
           </div>
         </div>

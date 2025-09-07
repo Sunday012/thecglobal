@@ -32,10 +32,10 @@ export default function MinistriesHero() {
           : "md:top-8 md:left-1/6 md:w-[70%] md:h-[60%] top-0 left-0 w-full h-full"
       }`}>
         <Image
-          src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758811/WhatsApp-Image-2024-02-19-at-03.17.40-1536x1023_m1hzhh.jpg"
+          src="/images/serve.jpg"
           alt="Houston skyline"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         <div className={`absolute inset-0 transition-all duration-700 ${

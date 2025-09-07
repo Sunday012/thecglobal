@@ -27,7 +27,7 @@ export default function NextSteps() {
       title: "TEC Voices",
       tagline: "Revealing Jesus through sound and Spirit.",
       description: "Our worship team leads the church into God's presence through anointed music and heartfelt worship. We believe worship is both a lifestyle and a ministry that transforms hearts.",
-      image: "/images/voices.jpg",
+      image: "/images/voice.jpg",
     },
     {
       category: "WOMEN'S MINISTRY",
@@ -55,7 +55,7 @@ export default function NextSteps() {
       title: "Hospitality",
       tagline: "Big smiles, warm hellos, feeling right at home.",
       description: "We're all about making you feel welcomed as family! From the moment you walk in, our team is here to greet you with love and make sure you leave feeling cared for.",
-      image: "/images/hospitality.jpg",
+      image: "/images/hospitable.jpg",
     },
     {
       category: "CHILDREN'S MINISTRY",
@@ -69,7 +69,7 @@ export default function NextSteps() {
       title: "Forged Men",
       tagline: "Brotherhood forged in faith and purpose.",
       description: "The men’s ministry of TEC is a brotherhood where faith, character, and purpose are shaped by God’s Word and sharpened through brotherhood. We equip men to lead with vision, stand with conviction, and build a lasting legacy. “As iron sharpens iron, so one man sharpens another.” – Proverbs 27:17",
-      image: "/images/forged.jpg",
+      image: "/images/forged-men.jpg",
     },
   ]
 

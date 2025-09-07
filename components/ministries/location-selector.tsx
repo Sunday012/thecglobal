@@ -15,7 +15,7 @@ export default function LocationSelector() {
       neighborhood: "Located near Southwest Houston",
       times: ["9:30A", "11:45A"],
       image:
-        "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758811/WhatsApp-Image-2024-02-19-at-03.17.40-1536x1023_m1hzhh.jpg",
+        "/images/houston-leader.jpg",
     },
     {
       name: "Springfield",
@@ -44,14 +44,16 @@ export default function LocationSelector() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-white py-20 px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-white py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-6xl font-rubik font-bold text-gray-800 mb-16">Select Your Location</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-rubik font-bold text-gray-800 mb-8 sm:mb-12 md:mb-16">
+            Select Your Location
+          </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
             {locations.map((location, index) => (
               <div
                 key={index}
@@ -64,28 +66,30 @@ export default function LocationSelector() {
                     alt={location.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={index === 0}
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-white/90 text-gray-700 px-3 py-1 rounded-full text-sm font-work-sans">
+                  <div className="absolute top-2 left-2 sm:top-4 sm:left-4">
+                    <span className="bg-white/90 text-gray-700 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-work-sans">
                       THIS WEEK
                     </span>
                   </div>
-                  <div className="absolute top-4 right-4 flex gap-2">
+                  <div className="absolute top-2 right-2 flex gap-1 sm:top-4 sm:right-4 sm:gap-2">
                     {location.times.map((time, timeIndex) => (
                       <span
                         key={timeIndex}
-                        className="bg-white/90 text-gray-700 px-3 py-1 rounded-full text-sm font-work-sans"
+                        className="bg-white/90 text-gray-700 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-work-sans"
                       >
                         {time}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-3xl font-rubik font-bold text-gray-800 mb-2">{location.name}</h3>
-                  <p className="text-gray-600 font-work-sans text-lg mb-1">{location.address}</p>
-                  <p className="text-gray-500 font-work-sans text-sm mb-6">{location.neighborhood}</p>
-                  <Button className="w-full bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium py-3 rounded-full text-sm tracking-wide">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-2xl sm:text-3xl font-rubik font-bold text-gray-800 mb-1 sm:mb-2">{location.name}</h3>
+                  <p className="text-gray-600 font-work-sans text-base sm:text-lg mb-0.5 sm:mb-1">{location.address}</p>
+                  <p className="text-gray-500 font-work-sans text-xs sm:text-sm mb-4 sm:mb-6">{location.neighborhood}</p>
+                  <Button className="w-full bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium py-2.5 sm:py-3 rounded-full text-xs sm:text-sm tracking-wide">
                     VIEW LOCATION
                   </Button>
                 </div>

@@ -25,7 +25,10 @@ export default function LeadershipHero() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative h-screen overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative h-[60vh] min-h-[400px] md:h-[75vh] lg:h-screen overflow-hidden flex items-center"
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -34,21 +37,22 @@ export default function LeadershipHero() {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center mt-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="max-w-2xl ml-auto">
+      <div className="relative z-10 w-full flex items-center mt-12 md:mt-16 h-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-xl sm:max-w-2xl ml-auto">
             <div
               className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}
             >
-              <h1 className="text-6xl lg:text-7xl font-montserrat font-bold text-white mb-8 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-bold text-white mb-6 sm:mb-8 leading-tight">
                 Our Leadership
               </h1>
-              {/* <p className="text-white font-work-sans text-lg leading-relaxed max-w-xl">
+              {/* <p className="text-white font-work-sans text-base sm:text-lg leading-relaxed max-w-xl">
                 We may be biased, but we think we have the very best team of people around leading our House week in and
                 week out! The Encounter Center Church is led by Pastor John + Sarah Smith, who are supported by an
                 incredible team of some of the most gifted, creative, winsome and hard-working people around.

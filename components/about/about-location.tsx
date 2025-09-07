@@ -66,50 +66,70 @@ export default function AboutLocations() {
   const current = locations[currentLocation]
 
   return (
-    <section ref={sectionRef} className="bg-white py-20 px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-white py-12 px-4 sm:py-16 sm:px-6 lg:py-20 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-16">Our Cities + Locations</h2>
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-montserrat font-bold text-[#272f31] mb-10 sm:mb-14 md:mb-16 text-center lg:text-left">
+            Our Cities + Locations
+          </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <p className="text-[#272f31]/70 font-work-sans text-sm uppercase tracking-wide mb-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+            <div className="flex flex-col justify-center text-left">
+              <p className="text-[#272f31]/70 font-work-sans text-xs sm:text-sm uppercase tracking-wide mb-2 sm:mb-4">
                 {current.subtitle}
               </p>
-              <h3 className="text-5xl font-rubik font-bold text-[#272f31] mb-8">{current.city}</h3>
-              <p className="text-[#272f31] font-work-sans text-lg leading-relaxed mb-6">{current.description}</p>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-rubik font-bold text-[#272f31] mb-4 sm:mb-8">
+                {current.city}
+              </h3>
+              <p className="text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+                {current.description}
+              </p>
               
-              <div className="mb-6">
-                <p className="text-[#272f31] font-work-sans font-semibold text-lg mb-3">We meet every:</p>
+              <div className="mb-4 sm:mb-6">
+                <p className="text-[#272f31] font-work-sans font-semibold text-base sm:text-lg mb-2 sm:mb-3">
+                  We meet every:
+                </p>
                 {current.schedule.map((time, index) => (
-                  <p key={index} className="text-[#272f31] font-work-sans text-lg mb-2">
+                  <p key={index} className="text-[#272f31] font-work-sans text-base sm:text-lg mb-1 sm:mb-2">
                     <span className="font-semibold">{time.split(' – ')[0]}</span> – {time.split(' – ')[1]}
                   </p>
                 ))}
               </div>
               
-              <p className="text-[#272f31] font-work-sans text-lg leading-relaxed">{current.callToAction}</p>
+              <p className="text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed">
+                {current.callToAction}
+              </p>
             </div>
-            <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
+            <div className="relative w-full h-56 sm:h-72 md:h-96 lg:h-auto aspect-[3/2] rounded-2xl overflow-hidden">
               <Image
                 src={current.image || "/placeholder.svg"}
                 alt={`${current.city} location`}
                 fill
                 className="object-cover rounded-2xl"
-                sizes="(min-width: 1024px) 600px, 100vw"
+                sizes="(max-width: 1024px) 100vw, 600px"
                 priority
               />
             </div>
           </div>
 
-          <div className="flex justify-center space-x-8 mt-12">
-            <button onClick={prevLocation} className="p-3 text-[#272f31]/70 hover:text-[#272f31] transition-colors">
-              <ChevronLeft size={32} />
+          <div className="flex justify-center space-x-6 sm:space-x-8 mt-8 sm:mt-12">
+            <button
+              onClick={prevLocation}
+              className="p-2 sm:p-3 text-[#272f31]/70 hover:text-[#272f31] transition-colors"
+              aria-label="Previous location"
+            >
+              <ChevronLeft size={28} className="sm:hidden" />
+              <ChevronLeft size={32} className="hidden sm:inline" />
             </button>
-            <button onClick={nextLocation} className="p-3 text-[#272f31]/70 hover:text-[#272f31] transition-colors">
-              <ChevronRight size={32} />
+            <button
+              onClick={nextLocation}
+              className="p-2 sm:p-3 text-[#272f31]/70 hover:text-[#272f31] transition-colors"
+              aria-label="Next location"
+            >
+              <ChevronRight size={28} className="sm:hidden" />
+              <ChevronRight size={32} className="hidden sm:inline" />
             </button>
           </div>
         </div>
