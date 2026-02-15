@@ -29,13 +29,13 @@ export default function StaffContact() {
       phone: "(713) 555-0103",
       description: "Houston location specific inquiries and pastoral care",
     },
-    {
-      name: "David Thompson",
-      title: "Springfield Pastor",
-      email: "david@encountercenter.org",
-      phone: "(217) 555-0104",
-      description: "Springfield location specific inquiries and pastoral care",
-    },
+    // {
+    //   name: "David Thompson",
+    //   title: "Springfield Pastor",
+    //   email: "david@encountercenter.org",
+    //   phone: "(217) 555-0104",
+    //   description: "Springfield location specific inquiries and pastoral care",
+    // },
     {
       name: "Ministry Team",
       title: "General Ministry",

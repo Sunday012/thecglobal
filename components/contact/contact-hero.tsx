@@ -100,7 +100,7 @@ export default function ContactHero() {
                 </div>
                 <div>
                   <h3 className="text-white font-montserrat font-bold text-lg mb-1">Visit Us</h3>
-                  <p className="text-white/70 font-work-sans">Houston & Springfield</p>
+                  <p className="text-white/70 font-work-sans">Houston</p>
                 </div>
               </div>
             </div>

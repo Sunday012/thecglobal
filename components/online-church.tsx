@@ -41,7 +41,7 @@ export default function OnlineChurch() {
             <p className="text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 px-0 sm:px-4 text-start md:text-end">
               Be part of TEC wherever you are. Join our live services, and grow in faith from anywhere in the world.
               <br />
-              Sundays at 5:30 PM (Houston) | 5:00 PM (Springfield)
+              Sundays at 5:30 PM (Houston)
             </p>
             <div className="flex flex-col sm:flex-row items-start md:items-end gap-4 w-full sm:w-auto">
               <Button

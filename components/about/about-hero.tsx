@@ -31,11 +31,10 @@ export default function AboutHero() {
     >
       <div className="w-full max-w-7xl mx-auto mt-44 sm:mt-32 md:mt-40">
         <div
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 transition-all duration-1000 ${
-            isVisible
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 transition-all duration-1000 ${isVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
-          }`}
+            }`}
         >
           <div className="flex flex-col justify-center">
             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-montserrat font-bold text-[#272f31] mb-2 leading-none text-left">
@@ -54,7 +53,7 @@ export default function AboutHero() {
                 To see all men saved, transformed, and sent.
                 We exist so people from every background, story, and season can experience the transformative power of God’s love—not religion, not routine. At TEC, every gathering is an invitation to truly know Him. Every moment is sacred. Every heart matters.
                 Jesus is the center of it all. We don’t build around personalities or preferences, but around His finished work.
-                Our roots are currently in Houston, Texas, and Springfield, Illinois—and we believe this is just the beginning.
+                Our roots are currently in Houston, Texas—and we believe this is just the beginning.
               </p>
             </div>
           </div>

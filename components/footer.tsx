@@ -80,7 +80,7 @@ export default function Footer() {
                   Houston, Texas 77083
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#"
                   className="text-[#272f31] font-rubik font-bold text-lg hover:text-[#0A523B] transition-colors"
@@ -89,7 +89,7 @@ export default function Footer() {
                   <br />
                   Springfield, IL 62703
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

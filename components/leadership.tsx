@@ -34,7 +34,7 @@ export default function Leadership() {
         >
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between mb-10 sm:mb-16">
             <h2 className="text-4xl sm:text-6xl md:text-7xl font-montserrat font-bold tracking-tighter text-[#272f31]">
-              Our Leadership
+              Our Pastors
             </h2>
             <Link href="/leadership" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-8 py-3 rounded-full text-sm tracking-wide">
@@ -55,12 +55,12 @@ export default function Leadership() {
                 Pastor Dr. Michael Aladejana is the Lead Pastor and founder of The Encounter Center (TEC) and the TEC Leadership & Bible Institute (TLBI). A passionate preacher, teacher, and mentor, he is dedicated to raising Kingdom influencers who are saved, transformed, and sent. Blending ministry and marketplace impact as a medical doctor . Dr. Michael is committed to equipping believers to live out their God-given purpose in every sphere of life
               </p>
             </div>
-            <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-auto">
+            <div className="relative w-full h-96 sm:h-[500px] lg:h-[500px]">
               <Image
-                src="/images/pastor.jpg"
-                alt="Pastor John and Sarah Smith"
+                src="/images/connect-leader.jpg"
+                alt="Pastor Dr. Michael Aladejana"
                 fill
-                className="rounded-2xl object-cover"
+                className="rounded-2xl object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 600px"
                 priority={false}
               />

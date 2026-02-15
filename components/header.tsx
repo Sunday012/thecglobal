@@ -43,21 +43,17 @@ export default function Header({ isHomePage = false }) {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled ? 'animate-slide-down' : ''
-      }`}>
-        {/* Top Navigation Bar */}
-        <nav className={`flex items-center py-4 px-4 sm:px-6 lg:px-8 justify-center mb-6 transition-all duration-500 ${
-          isScrolled ? 'bg-gray-100' : 'bg-transparent'
+      <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled ? 'animate-slide-down' : ''
         }`}>
+        {/* Top Navigation Bar */}
+        <nav className={`flex items-center py-4 px-4 sm:px-6 lg:px-8 justify-center mb-6 transition-all duration-500 ${isScrolled ? 'bg-gray-100' : 'bg-gray-100'
+          }`}>
           <div className="hidden md:flex items-center space-x-4 sm:space-x-6 md:space-x-8">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`hover:text-[#0A523B] font-work-sans text-xs sm:text-sm font-medium transition-colors flex items-center gap-1 ${
-                  isScrolled ? 'text-[#272f31]' : 'text-white'
-                }`}
+                className="hover:text-[#0A523B] font-work-sans text-xs sm:text-sm font-medium transition-colors flex items-center gap-1 text-[#272f31]"
               >
                 {item.icon && (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -73,21 +69,18 @@ export default function Header({ isHomePage = false }) {
           <div className="flex md:hidden flex-1 justify-end">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`p-2 hover:text-[#0A523B] transition-colors ${
-                isScrolled ? 'text-[#272f31]' : 'text-white'
-              }`}
+              className="p-2 hover:text-[#0A523B] transition-colors text-[#272f31]"
               aria-label="Toggle menu"
             >
               <Menu size={24} />
             </button>
           </div>
         </nav>
-        
+
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
           {/* Main Header */}
-          <div className={`flex flex-col sm:flex-row rounded-4xl px-2 sm:px-4 py-4 items-center justify-between ${
-            isScrolled ? "bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm" : ""
-          }`}>
+          <div className={`flex flex-col sm:flex-row rounded-4xl px-2 sm:px-4 py-4 items-center justify-between ${isScrolled ? "bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm" : "bg-white/20 hover:bg-white/30 border border-white/30 backdrop-blur-sm"
+            }`}>
             {/* Logo */}
             <Link href="/" className="flex items-center mb-2 sm:mb-0">
               <Image
@@ -95,9 +88,7 @@ export default function Header({ isHomePage = false }) {
                 alt="The Encounter Center Church"
                 width={120}
                 height={120}
-                className={`mr-2 sm:mr-4 transition-all duration-500 ${
-                  isScrolled ? '' : 'filter brightness-0 invert'
-                }`}
+                className="mr-2 sm:mr-4 transition-all duration-500"
                 style={{ width: "auto", height: "40px" }}
               />
             </Link>
@@ -113,9 +104,7 @@ export default function Header({ isHomePage = false }) {
               <div className="hidden md:block">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className={`p-2 hover:text-[#0A523B] transition-colors ${
-                    isScrolled ? 'text-[#272f31]' : 'text-white'
-                  }`}
+                  className="p-2 hover:text-[#0A523B] transition-colors text-[#272f31]"
                   aria-label="Toggle menu"
                 >
                   <Menu size={24} />
@@ -128,9 +117,8 @@ export default function Header({ isHomePage = false }) {
 
       {/* Half-Screen Menu Overlay */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-black z-50 transition-transform duration-500 ease-in-out ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-[200%]"
-        }`}
+        className={`fixed top-0 left-0 right-0 bg-black z-50 transition-transform duration-500 ease-in-out ${isMenuOpen ? "translate-y-0" : "-translate-y-[200%]"
+          }`}
         style={{ height: "100vh" }}
       >
         {/* Menu Header */}
@@ -171,13 +159,13 @@ export default function Header({ isHomePage = false }) {
               >
                 HOUSTON
               </Link>
-              <Link
+              {/* <Link
                 href="/springfield"
                 className="text-white hover:text-[#00BCD4] font-work-sans text-xs sm:text-sm font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 SPRINGFIELD
-              </Link>
+              </Link> */}
               <Link
                 href="/give"
                 className="text-white hover:text-[#00BCD4] font-work-sans text-xs sm:text-sm font-medium transition-colors"
@@ -274,7 +262,7 @@ export default function Header({ isHomePage = false }) {
                     </Link>
                     <p className="text-gray-400 font-work-sans text-xs sm:text-sm mt-1">15000 Bellaire Blvd Unit W</p>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/springfield"
                       className="text-white hover:text-[#00BCD4] font-rubik text-base sm:text-lg font-medium transition-colors"
@@ -283,7 +271,7 @@ export default function Header({ isHomePage = false }) {
                       Springfield
                     </Link>
                     <p className="text-gray-400 font-work-sans text-xs sm:text-sm mt-1">3075 Normandy Rd</p>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/online"

@@ -24,18 +24,18 @@ export default function AboutLocations() {
         "/images/houston.jpg",
       address: "15000 Bellaire Blvd Unit W",
     },
-    {
-      city: "Springfield",
-      subtitle: "JOIN US IN SPRINGFIELD",
-      description:
-        "Located in the heart of Springfield, our Sunday gatherings are a space where you and your family can encounter God together, through heartfelt worship, powerful teaching, and genuine community.",
-      schedule: [
-        "Sunday at 5:00 PM – Worship Gathering"
-      ],
-      callToAction: "Come as you are. There's a seat for you. We can't wait to worship with you!",
-      image: "/images/springfield.jpg",
-      address: "3075 Normandy Rd",
-    },
+    // {
+    //   city: "Springfield",
+    //   subtitle: "JOIN US IN SPRINGFIELD",
+    //   description:
+    //     "Located in the heart of Springfield, our Sunday gatherings are a space where you and your family can encounter God together, through heartfelt worship, powerful teaching, and genuine community.",
+    //   schedule: [
+    //     "Sunday at 5:00 PM – Worship Gathering"
+    //   ],
+    //   callToAction: "Come as you are. There's a seat for you. We can't wait to worship with you!",
+    //   image: "/images/springfield.jpg",
+    //   address: "3075 Normandy Rd",
+    // },
   ]
 
   useEffect(() => {
@@ -86,7 +86,7 @@ export default function AboutLocations() {
               <p className="text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
                 {current.description}
               </p>
-              
+
               <div className="mb-4 sm:mb-6">
                 <p className="text-[#272f31] font-work-sans font-semibold text-base sm:text-lg mb-2 sm:mb-3">
                   We meet every:
@@ -97,7 +97,7 @@ export default function AboutLocations() {
                   </p>
                 ))}
               </div>
-              
+
               <p className="text-[#272f31] font-work-sans text-base sm:text-lg leading-relaxed">
                 {current.callToAction}
               </p>

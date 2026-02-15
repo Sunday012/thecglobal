@@ -35,8 +35,8 @@ export default function HomePage() {
       <Locations />
       <OnlineChurch />
       <Leadership />
-      <EquipSection />
-      <Newsletter />
+      {/* <EquipSection /> */}
+      {/* <Newsletter /> */}
       <Giving />
       <Movement />
       <Footer />

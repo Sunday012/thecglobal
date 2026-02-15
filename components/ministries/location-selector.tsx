@@ -17,13 +17,13 @@ export default function LocationSelector() {
       image:
         "/images/houston-leader.jpg",
     },
-    {
-      name: "Springfield",
-      address: "3075 Normandy Rd, Springfield, IL 62703",
-      neighborhood: "Located near North Springfield",
-      times: ["9:30A", "11:30A"],
-      image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg",
-    },
+    // {
+    //   name: "Springfield",
+    //   address: "3075 Normandy Rd, Springfield, IL 62703",
+    //   neighborhood: "Located near North Springfield",
+    //   times: ["9:30A", "11:30A"],
+    //   image: "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758817/WhatsApp-Image-2024-02-19-at-03.15.04-1536x1023_ewhb3o.jpg",
+    // },
   ]
 
   useEffect(() => {
@@ -50,14 +50,14 @@ export default function LocationSelector() {
           className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-rubik font-bold text-gray-800 mb-8 sm:mb-12 md:mb-16">
-            Select Your Location
+            Our Location
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+          <div className="flex justify-center">
             {locations.map((location, index) => (
               <div
                 key={index}
-                className={`bg-white border border-gray-100 rounded-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:shadow-lg hover:-translate-y-2 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`bg-white border border-gray-100 rounded-2xl overflow-hidden group cursor-pointer transition-all duration-500 hover:shadow-lg hover:-translate-y-2 w-full max-w-lg ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <div className="relative aspect-[4/3]">

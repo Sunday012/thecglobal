@@ -21,7 +21,7 @@ export default function WaysToGive() {
     {
       title: "Gifts By Mail",
       description:
-        "Please make your check payable to: The Encounter Center Church. If you are giving to a Houston location, please indicate the location in the memo field or account number field if using Bill Pay.\n\nWe are unable to split gifts between locations.",
+        "Please make your check payable to: The Encounter Center Church. If you are using Bill Pay, please indicate the account number field.",
       extraContent: (
         <div className="mt-6">
           <p className="text-[#272f31] font-work-sans font-medium text-sm mb-2">Our mailing address is:</p>
@@ -33,8 +33,8 @@ export default function WaysToGive() {
             <p className="text-[#272f31] font-work-sans font-medium text-sm mb-1">If you are using a Donor Fund:</p>
             <p className="text-[#272f31]/70 font-work-sans text-sm">
               <strong>The Encounter Center Church's Tax ID:</strong> 27-1721038
-              <br />
-              <strong>Springfield Location Tax ID:</strong> 82-2413995
+              {/* <br />
+              <strong>Springfield Location Tax ID:</strong> 82-2413995 */}
             </p>
           </div>
         </div>
@@ -107,12 +107,12 @@ export default function WaysToGive() {
                             {method.description}
                           </p>
                           <div className="mb-5">
-                          {method.extraContent}
+                            {method.extraContent}
                           </div>
                           {method.hasButton && (
                             method.button === "CONTACT US" ? (
                               <Link href="/contact" className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide mt-6">
-                                  {method.button}
+                                {method.button}
                               </Link>
                             ) : (
                               <Button className="bg-[#0A523B] hover:bg-[#0A523B]/80 text-white font-work-sans font-medium px-6 py-3 rounded-full text-sm tracking-wide mt-6">
@@ -144,9 +144,8 @@ export default function WaysToGive() {
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      index === currentSlide ? "bg-[#0A523B]" : "bg-[#272f31]/20"
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? "bg-[#0A523B]" : "bg-[#272f31]/20"
+                      }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}

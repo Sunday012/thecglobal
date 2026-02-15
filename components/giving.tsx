@@ -57,7 +57,7 @@ export default function Giving() {
               <Button className="w-full bg-[#0A523B] hover:bg-[#0A523B]/80 h-[48px] sm:h-[52px] text-white font-work-sans font-medium py-3 sm:py-4 rounded-full text-base sm:text-lg tracking-wide">
                 Give Now
               </Button>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button
                   variant="outline"
                   className="flex-1 border-[#272f31] text-[#272f31] hover:bg-[#272f31] hover:text-white font-work-sans font-medium py-3 rounded-full bg-transparent"
@@ -67,7 +67,7 @@ export default function Giving() {
                 <Button className="flex-1 bg-[#272f31] hover:bg-[#0A523B] text-white font-work-sans font-medium py-3 rounded-full">
                   RETURNING GIVERS
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

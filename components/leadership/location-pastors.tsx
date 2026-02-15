@@ -18,15 +18,15 @@ export default function LocationPastors() {
       image:
         "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758816/WhatsApp-Image-2024-02-19-at-03.16.21_gkmxj0.jpg",
     },
-    {
-      names: "David + Rebecca Thompson",
-      title: "Springfield City Pastor",
-      location: "SPRINGFIELD LOCATION",
-      description:
-        "Pastor David serves as the Springfield Location Pastor at The Encounter Center Church. He is passionate about raising up leaders and inspiring people to live wholeheartedly for the things of God. He and Rebecca have been married for 12 years and have three beautiful children. David and Rebecca are originally from Chicago where they pastored for 8 years before relocating to Springfield.",
-      image:
-        "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
-    },
+    // {
+    //   names: "David + Rebecca Thompson",
+    //   title: "Springfield City Pastor",
+    //   location: "SPRINGFIELD LOCATION",
+    //   description:
+    //     "Pastor David serves as the Springfield Location Pastor at The Encounter Center Church. He is passionate about raising up leaders and inspiring people to live wholeheartedly for the things of God. He and Rebecca have been married for 12 years and have three beautiful children. David and Rebecca are originally from Chicago where they pastored for 8 years before relocating to Springfield.",
+    //   image:
+    //     "https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758812/WhatsApp-Image-2024-02-19-at-03.15.22_iei4jc.jpg",
+    // },
   ]
 
   useEffect(() => {

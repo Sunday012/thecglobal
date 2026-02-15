@@ -18,15 +18,15 @@ export default function LocationsContact() {
       serviceTimes: ["Sunday 9:30 AM", "Sunday 11:45 AM"],
       mapUrl: "https://maps.google.com/?q=15000+Bellaire+Blvd+Unit+W+Houston+TX+77083",
     },
-    {
-      city: "Springfield",
-      address: "3075 Normandy Rd",
-      fullAddress: "Springfield, IL 62703",
-      phone: "(217) 555-0123",
-      email: "springfield@encountercenter.org",
-      serviceTimes: ["Sunday 9:30 AM", "Sunday 11:30 AM"],
-      mapUrl: "https://maps.google.com/?q=3075+Normandy+Rd+Springfield+IL+62703",
-    },
+    // {
+    //   city: "Springfield",
+    //   address: "3075 Normandy Rd",
+    //   fullAddress: "Springfield, IL 62703",
+    //   phone: "(217) 555-0123",
+    //   email: "springfield@encountercenter.org",
+    //   serviceTimes: ["Sunday 9:30 AM", "Sunday 11:30 AM"],
+    //   mapUrl: "https://maps.google.com/?q=3075+Normandy+Rd+Springfield+IL+62703",
+    // },
   ]
 
   useEffect(() => {
@@ -54,19 +54,19 @@ export default function LocationsContact() {
         >
           <div className="text-center mb-16">
             <h2 className="text-6xl font-montserrat font-bold text-[#272f31] mb-6">
-              Our <em className="font-playfair italic">Locations</em>
+              Our <em className="font-playfair italic">Location</em>
             </h2>
             <p className="text-[#272f31]/70 font-work-sans text-lg max-w-3xl mx-auto">
-              We have two locations serving Houston and Springfield. Each location offers the same heart for worship and
+              We have a location serving Houston. Our location offers the same heart for worship and
               community, tailored to serve their local neighborhoods.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="flex justify-center">
             {locations.map((location, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-8 shadow-sm transition-all duration-500 hover:shadow-lg hover:-translate-y-2 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+                className={`bg-white rounded-2xl p-8 shadow-sm transition-all duration-500 hover:shadow-lg hover:-translate-y-2 w-full max-w-2xl ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <h3 className="text-4xl font-montserrat font-bold text-[#272f31] mb-6">{location.city}</h3>
