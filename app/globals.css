@@ -318,10 +318,10 @@ form .button { align-self: flex-start; border: 0; cursor: pointer; }
 .our-heart-page { color: var(--tec-green); background: #fff; }
 .heart-hero { padding-top: 78px; }
 .heart-hero-copy { max-width: 980px; }
-.heart-hero h1 { margin: 0 0 36px; font-size: clamp(66px, 7.1vw, 108px); line-height: .93; letter-spacing: -.07em; }
+.heart-hero h1 { margin: 0 0 36px; font-size: clamp(68px, 7.35vw, 112px); line-height: .95; letter-spacing: -.05em; }
 .heart-hero h1 span, .heart-hero h1 em { display: block; }
-.heart-hero h1 span { font-weight: 700; }
-.heart-hero h1 em { margin-block: 10px; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.heart-hero h1 span { font-weight: 600; }
+.heart-hero h1 em { margin-block: 10px; font-family: var(--font-playfair), Georgia, serif; font-weight: 400; letter-spacing: -.04em; }
 .heart-hero-copy > p { max-width: 560px; margin-bottom: 0; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
 .heart-hero-copy > .button { margin-top: 34px; }
 .vision-image img, .beliefs-image img, .houston-image img, .leadership-image img { object-fit: cover; }
