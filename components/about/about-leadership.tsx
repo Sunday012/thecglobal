@@ -40,8 +40,8 @@ export default function AboutLeadership() {
         >
           <div className="relative w-full h-64 sm:h-80 md:h-[400px] lg:h-[500px] flex items-center">
             <Image
-              src="https://res.cloudinary.com/dzckvrvu9/image/upload/v1752758813/WhatsApp-Image-2024-02-19-at-03.14.43_zgruwp.jpg"
-              alt="Pastor John and Sarah Smith"
+              src="/images/connect-leader.jpg"
+              alt="Pastor Dr. Michael Aladejana"
               fill
               className="rounded-2xl object-cover object-center"
               sizes="(min-width: 1024px) 600px, 100vw"

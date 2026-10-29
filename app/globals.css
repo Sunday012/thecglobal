@@ -127,3 +127,522 @@
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --tec-green: #123f34;
+  --tec-deep: #0f3a30;
+  --tec-soft: #566a65;
+  --tec-cream: #f4f4ed;
+  --tec-line: #ccd6cf;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--tec-green); background: #fff; }
+button, input, textarea, select { font: inherit; }
+a { color: inherit; text-decoration: none; }
+.site-shell { overflow: clip; font-family: var(--font-work-sans), Arial, sans-serif; font-weight: 400; }
+.content, .nav-wrap { width: min(1200px, calc(100% - 48px)); margin-inline: auto; }
+.nav-wrap { width: min(1320px, calc(100% - 48px)); }
+.section-pad { padding: 112px 0; scroll-margin-top: 92px; }
+.cream { background: var(--tec-cream); }
+.eyebrow { margin: 0 0 34px; font-size: 11px; line-height: 1.2; font-weight: 650; letter-spacing: .17em; text-transform: uppercase; }
+.dot::before { content: ""; display: inline-block; width: 7px; height: 7px; margin: 0 12px 1px 0; border-radius: 50%; background: #1c5a48; }
+h1, h2, h3, p { margin-top: 0; }
+h2 { margin-bottom: 0; font-size: clamp(48px, 5vw, 68px); font-weight: 400; line-height: 1.04; letter-spacing: -.055em; }
+h2 em, h1 em { display: block; font-family: var(--font-playfair), Georgia, serif; font-weight: 400; line-height: 1.05; letter-spacing: -.055em; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 84px; }
+.arrow { display: inline-block; font-size: 20px; line-height: 1; font-weight: 400; }
+.button { min-height: 58px; padding: 0 25px; display: inline-flex; align-items: center; justify-content: space-between; gap: 48px; border: 1px solid var(--tec-green); font-size: 13px; transition: .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.primary { background: #155844; color: white; border-color: #155844; }
+.text-link { display: inline-flex; align-items: center; gap: 30px; font-size: 13px; }
+.underline { min-width: 150px; padding: 10px 0 13px; border-bottom: 1px solid currentColor; justify-content: space-between; }
+
+.site-header { position: sticky; z-index: 50; top: 0; height: 94px; background: rgba(255,255,255,.96); border-bottom: 1px solid #e1e5e2; backdrop-filter: blur(12px); }
+.nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo { display: block; width: 158px; height: auto; }
+.nav-links { display: flex; align-items: center; gap: 31px; font-size: 13px; }
+.nav-links > a:not(.nav-cta):hover { opacity: .6; }
+.nav-cta { min-width: 160px; min-height: 55px; padding: 0 19px; margin-left: 2px; display: flex; align-items: center; justify-content: space-between; color: white; background: #155844; }
+.menu-button { display: none; border: 0; color: var(--tec-green); background: transparent; }
+
+.hero { min-height: 890px; padding-top: 80px; padding-bottom: 0; }
+.hero .content { min-height: 810px; display: flex; flex-direction: column; }
+.hero-kicker { margin: 3px 0 30px; color: var(--tec-soft); font-size: 17px; }
+.hero h1 { margin: 0; width: min-content; font-size: clamp(92px, 10vw, 150px); line-height: .95; letter-spacing: -.075em; }
+.hero h1 span, .hero h1 em { display: block; white-space: nowrap; }
+.hero h1 span { font-weight: 700; }
+.hero h1 em { margin: 14px 0 11px; font-size: .83em; font-weight: 500; }
+.hero-copy { max-width: 510px; margin: 46px 0 34px; color: var(--tec-soft); font-size: 17px; line-height: 1.6; }
+.hero-actions { display: flex; align-items: center; gap: 27px; }
+.hero-foot { margin-top: auto; padding: 34px 0 48px; display: flex; align-items: center; justify-content: space-between; color: var(--tec-soft); border-bottom: 1px solid var(--tec-line); font-size: 11px; letter-spacing: .04em; }
+.hero-foot a { display: flex; gap: 26px; align-items: center; }
+
+.heart { padding-top: 108px; }
+.intro-split { align-items: start; }
+.intro-split .body-copy { padding-top: 36px; color: var(--tec-soft); font-size: 16px; line-height: 1.65; }
+.body-copy p { max-width: 550px; margin-bottom: 22px; }
+.body-copy .text-link { color: var(--tec-green); }
+.pillars { margin-top: 92px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; }
+.pillars article { padding-top: 26px; border-top: 1px solid var(--tec-line); }
+.pillars span, .card > span { color: #6a7c76; font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
+.pillars h3 { margin: 27px 0 20px; font-size: 30px; font-weight: 400; letter-spacing: -.04em; }
+.pillars p { color: var(--tec-soft); line-height: 1.6; font-size: 14px; }
+
+.section-heading { align-items: end; margin-bottom: 54px; }
+.section-heading > p, .section-heading > div:last-child > p { max-width: 490px; margin: 0 0 0 auto; color: var(--tec-soft); font-size: 16px; line-height: 1.65; }
+.gathering-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { min-height: 375px; padding: 42px; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--tec-line); }
+.card h3 { margin: 43px 0 25px; font-size: 38px; line-height: 1.1; font-weight: 400; letter-spacing: -.05em; }
+.card p { max-width: 440px; color: var(--tec-soft); font-size: 15px; line-height: 1.6; }
+.card .text-link { margin-top: auto; align-self: flex-start; }
+.fine-print { margin: 26px 0 0; color: var(--tec-soft); font-size: 12px; }
+
+.pastors { padding-block: 132px; }
+.pastor-grid { display: grid; grid-template-columns: 1fr 1.12fr; gap: 120px; align-items: center; }
+.pastor-image { position: relative; min-height: 570px; overflow: hidden; border-radius: 0 95px 0 0; }
+.pastor-image img { object-fit: cover; object-position: center 30%; }
+.pastor-copy h2 { margin-bottom: 34px; }
+.pastor-copy h3 { margin-bottom: 23px; font-size: 21px; font-weight: 400; line-height: 1.25; letter-spacing: -.03em; }
+.pastor-copy > p:not(.eyebrow) { max-width: 540px; margin-bottom: 23px; color: var(--tec-soft); font-size: 15px; line-height: 1.65; }
+.pastor-copy .text-link { margin-top: 12px; }
+
+.events .section-heading { margin-bottom: 40px; }
+.event-list { border-top: 1px solid var(--tec-line); }
+.event-row { min-height: 140px; display: grid; grid-template-columns: 130px 1fr 50px; gap: 22px; align-items: center; border-bottom: 1px solid var(--tec-line); }
+.date { display: flex; flex-direction: column; gap: 15px; }
+.date span, .event-info > span { color: #5d736c; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
+.date strong { font-size: 31px; font-weight: 400; letter-spacing: -.05em; }
+.event-info h3 { margin: 4px 0; font-size: 24px; font-weight: 400; letter-spacing: -.04em; }
+.event-info p { margin: 0; color: var(--tec-soft); font-size: 13px; }
+.event-row > a { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid var(--tec-line); border-radius: 50%; }
+
+.word { padding-block: 105px; }
+.word .section-heading { margin-block: 0; align-items: center; }
+.word .section-heading > div:last-child { width: min(100%, 490px); margin-left: auto; }
+.word .section-heading > div:last-child > p { margin-left: 0; }
+.word .button { margin-top: 25px; }
+.outline { background: #fff; }
+.partner { color: white; background: #155844; }
+.partner .eyebrow { color: #e1e9e5; }
+.partner h3 { max-width: 530px; margin: 0 0 25px; font-size: 25px; font-weight: 400; line-height: 1.45; }
+.partner .split > div:last-child > p { max-width: 530px; margin-bottom: 26px; color: #e3e9e6; line-height: 1.65; }
+.light { color: var(--tec-green); background: white; border-color: white; }
+
+.faq-grid { align-items: start; }
+.faq .eyebrow { margin-bottom: 38px; }
+.accordion { border-top: 1px solid var(--tec-line); }
+.faq-item { border-bottom: 1px solid var(--tec-line); }
+.faq-item button { width: 100%; min-height: 73px; padding: 0; display: flex; align-items: center; justify-content: space-between; text-align: left; color: var(--tec-green); background: none; border: 0; cursor: pointer; }
+.faq-item button b { font-size: 20px; font-weight: 400; }
+.faq-item p { margin: -4px 40px 22px 0; color: var(--tec-soft); font-size: 14px; line-height: 1.55; }
+
+.connect-grid { align-items: start; }
+.connect-grid > div > p:not(.eyebrow) { max-width: 490px; margin-top: 38px; color: var(--tec-soft); line-height: 1.65; }
+.location-note { margin-top: 46px; padding-left: 18px; border-left: 2px solid #abc9a9; color: var(--tec-soft); font-size: 13px; line-height: 1.8; }
+form { display: flex; flex-direction: column; gap: 19px; }
+form label { display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 600; }
+form label > span { color: var(--tec-soft); font-weight: 400; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+input, select, textarea { width: 100%; border: 1px solid #b9c8bf; border-radius: 0; color: var(--tec-green); background: rgba(255,255,255,.8); outline: none; }
+input, select { height: 52px; padding: 0 16px; }
+textarea { padding: 14px 16px; resize: vertical; }
+input:focus, select:focus, textarea:focus { border-color: var(--tec-green); box-shadow: 0 0 0 1px var(--tec-green); }
+.check { display: grid; grid-template-columns: 20px 1fr; align-items: start; gap: 11px; color: var(--tec-soft); font-weight: 400; line-height: 1.5; }
+.check input { width: 19px; height: 19px; margin-top: 1px; }
+.check small { display: block; margin-top: 2px; }
+form .button { align-self: flex-start; border: 0; cursor: pointer; }
+.success { padding: 18px; color: white; background: #155844; }
+
+.site-footer { padding: 52px 0; background: #fff; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; }
+.footer-grid > p { margin: 0; text-align: center; font-family: var(--font-playfair), Georgia, serif; font-size: 19px; }
+.footer-grid > div { display: flex; flex-direction: column; align-items: flex-end; gap: 23px; font-size: 10px; }
+.footer-grid nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 18px; font-size: 11px; }
+.footer-grid nav a:hover { opacity: .6; }
+
+@media (max-width: 800px) {
+  .content, .nav-wrap { width: min(100% - 36px, 600px); }
+  .section-pad { padding-block: 78px; }
+  .word .section-heading > div:last-child { margin-left: 0; }
+  .site-header { height: 78px; }
+  .nav-links { display: none; position: absolute; top: 78px; left: 0; right: 0; padding: 28px 18px; align-items: stretch; flex-direction: column; gap: 0; background: white; border-bottom: 1px solid var(--tec-line); }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 14px; }
+  .nav-cta { margin-top: 9px; min-height: 55px; }
+  .menu-button { display: block; }
+  .split, .pastor-grid { grid-template-columns: 1fr; gap: 45px; }
+  h2 { font-size: clamp(43px, 13vw, 59px); }
+  .hero { min-height: calc(100svh - 78px); padding-top: 57px; }
+  .hero .content { min-height: calc(100svh - 135px); }
+  .hero h1 { font-size: clamp(64px, 21vw, 105px); }
+  .hero h1 em { white-space: normal; font-size: .78em; }
+  .hero-kicker { margin-bottom: 20px; }
+  .hero-copy { margin-top: 35px; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .button { align-self: flex-start; }
+  .hero-foot { margin-top: 60px; gap: 20px; }
+  .hero-foot a { display: none; }
+  .intro-split .body-copy { padding-top: 0; }
+  .pillars { margin-top: 64px; grid-template-columns: 1fr; gap: 35px; }
+  .section-heading { align-items: start; }
+  .section-heading > p { margin: 0; }
+  .gathering-grid { grid-template-columns: 1fr; }
+  .card { min-height: 345px; padding: 32px 26px; }
+  .pastors { padding-block: 80px; }
+  .pastor-grid { gap: 55px; }
+  .pastor-image { min-height: 500px; border-radius: 0 70px 0 0; }
+  .pastor-image img { object-position: center 30%; }
+  .event-row { min-height: 156px; grid-template-columns: 75px 1fr 40px; gap: 12px; }
+  .date strong { font-size: 24px; }
+  .event-info h3 { font-size: 20px; }
+  .event-info p { display: none; }
+  .event-row > a { width: 38px; height: 38px; }
+  .partner .split { gap: 38px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 34px; justify-items: center; }
+  .footer-grid > div { align-items: center; }
+}
+
+@media (max-width: 420px) {
+  .brand-logo { width: 142px; }
+  .eyebrow { line-height: 1.5; }
+  .hero h1 { font-size: 62px; }
+  .hero h1 em { margin-block: 9px; }
+  .card h3 { font-size: 34px; }
+  .pastor-image { min-height: 440px; }
+}
+
+/* Our Heart page */
+.our-heart-page { color: var(--tec-green); background: #fff; }
+.heart-hero { padding-top: 78px; }
+.heart-hero-copy { max-width: 980px; }
+.heart-hero h1 { margin: 0 0 36px; font-size: clamp(66px, 7.1vw, 108px); line-height: .93; letter-spacing: -.07em; }
+.heart-hero h1 span, .heart-hero h1 em { display: block; }
+.heart-hero h1 span { font-weight: 700; }
+.heart-hero h1 em { margin-block: 10px; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.heart-hero-copy > p { max-width: 560px; margin-bottom: 0; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.heart-hero-copy > .button { margin-top: 34px; }
+.vision-image img, .beliefs-image img, .houston-image img, .leadership-image img { object-fit: cover; }
+.heart-intro { align-items: start; }
+.heart-intro > div { padding-top: 25px; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.heart-intro > div p { margin-bottom: 23px; }
+.heart-pillars { margin-top: 82px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 52px; }
+.heart-pillars article { padding-top: 23px; border-top: 1px solid var(--tec-line); }
+.heart-pillars span { color: #6b7e77; font-size: 10px; }
+.heart-pillars h3 { margin: 25px 0 16px; font-size: 30px; font-weight: 400; letter-spacing: -.04em; }
+.heart-pillars p { color: var(--tec-soft); font-size: 14px; line-height: 1.6; }
+.vision-grid, .beliefs-grid, .houston-grid, .leadership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 105px; align-items: center; }
+.vision-image, .beliefs-image, .houston-image, .leadership-image { position: relative; min-height: 620px; overflow: hidden; }
+.vision-image { border-radius: 0 90px 0 0; }
+.beliefs-image { border-radius: 90px 0 0 0; }
+.vision-copy > h2, .beliefs-grid h2, .houston-grid h2, .leadership-grid h2 { margin-bottom: 37px; }
+.vision-block { padding: 22px 0; border-top: 1px solid var(--tec-line); }
+.vision-block span { display: block; margin-bottom: 11px; font-size: 11px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+.vision-block p, .beliefs-grid > div:first-child > p, .houston-grid > div:first-child > p, .leadership-grid > div:last-child > p { color: var(--tec-soft); font-size: 15px; line-height: 1.7; }
+.beliefs-grid > div:first-child > p { max-width: 545px; margin-bottom: 31px; }
+.values-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 110px; align-items: start; }
+.values-heading { position: sticky; top: 130px; }
+.values-heading h2 { margin-bottom: 30px; }
+.values-heading > p:last-child { max-width: 440px; color: var(--tec-soft); line-height: 1.7; }
+.values-list { border-top: 1px solid var(--tec-line); }
+.value-item { border-bottom: 1px solid var(--tec-line); }
+.value-item button { width: 100%; min-height: 82px; display: grid; grid-template-columns: 48px 1fr 28px; align-items: center; gap: 16px; padding: 0; color: var(--tec-green); text-align: left; background: none; border: 0; cursor: pointer; }
+.value-item button strong { font-size: 20px; font-weight: 400; letter-spacing: -.025em; }
+.value-number { color: #87958f; font-size: 10px; }
+.value-item button b { font-size: 20px; font-weight: 400; text-align: right; }
+.value-item > p { margin: -3px 35px 25px 64px; color: var(--tec-soft); font-size: 14px; line-height: 1.65; }
+.houston-section { color: white; background: #155844; }
+.houston-section .eyebrow { color: #dbe7e2; }
+.houston-grid > div:first-child > p { color: #dbe7e2; }
+.houston-image { min-height: 560px; border-radius: 0 90px 0 0; }
+.schedule { margin: 32px 0; padding-block: 22px; display: grid; grid-template-columns: 90px 1fr; gap: 16px; border-top: 1px solid rgba(255,255,255,.35); border-bottom: 1px solid rgba(255,255,255,.35); }
+.schedule span { color: #cbdad4; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
+.schedule strong { font-size: 14px; font-weight: 400; }
+.leadership-image { min-height: 650px; border-radius: 0 90px 0 0; }
+.leadership-image img { object-position: center 28%; }
+.leadership-grid h3 { margin-bottom: 23px; font-size: 21px; line-height: 1.3; font-weight: 400; letter-spacing: -.03em; }
+.heart-cta { color: white; background: var(--tec-green); }
+.heart-cta .split { align-items: center; }
+.heart-cta p { max-width: 500px; color: #dbe7e2; font-size: 17px; line-height: 1.65; }
+.heart-cta .button { margin-top: 20px; }
+
+@media (max-width: 800px) {
+  .vision-grid, .beliefs-grid, .houston-grid, .leadership-grid, .values-grid { grid-template-columns: 1fr; gap: 50px; }
+  .heart-hero { padding-top: 58px; }
+  .heart-hero h1 { font-size: clamp(58px, 18vw, 80px); }
+  .heart-pillars { margin-top: 62px; grid-template-columns: 1fr; gap: 32px; }
+  .vision-image, .beliefs-image, .houston-image, .leadership-image { min-height: 480px; }
+  .beliefs-image { grid-row: 1; border-radius: 0 60px 0 0; }
+  .values-heading { position: static; }
+  .houston-image { grid-row: 1; }
+  .leadership-image { min-height: 530px; }
+  .heart-cta .split { gap: 30px; }
+}
+
+@media (max-width: 420px) {
+  .heart-hero h1 { font-size: 55px; }
+  .vision-image, .beliefs-image, .houston-image { min-height: 400px; }
+  .leadership-image { min-height: 470px; }
+  .value-item button { grid-template-columns: 35px 1fr 22px; }
+  .value-item button strong { font-size: 18px; }
+  .value-item > p { margin-left: 51px; }
+}
+
+/* Discipleship page */
+.discipleship-page { color: var(--tec-green); background: #fff; }
+.discipleship-hero { padding-top: 82px; }
+.discipleship-hero-heading { margin-bottom: 58px; display: grid; grid-template-columns: 1.25fr .75fr; gap: 90px; align-items: end; }
+.discipleship-hero h1 { margin: 0; font-size: clamp(58px, 5.4vw, 78px); line-height: 1.02; letter-spacing: -.06em; font-weight: 400; }
+.discipleship-hero h1 em { display: block; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.discipleship-hero-heading > p { max-width: 430px; margin: 0 0 4px auto; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.discipleship-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.discipleship-cards article { min-height: 385px; padding: 43px; display: flex; flex-direction: column; background: white; border: 1px solid var(--tec-line); }
+.discipleship-cards article > span { color: #6a7c76; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.discipleship-cards h2 { margin: 43px 0 25px; font-size: 38px; line-height: 1.1; font-weight: 400; letter-spacing: -.05em; }
+.discipleship-cards article > p { max-width: 440px; color: var(--tec-soft); font-size: 15px; line-height: 1.65; }
+.discipleship-cards .text-link { margin-top: auto; align-self: flex-start; }
+.discipleship-note { margin: 25px 0 0; color: var(--tec-soft); font-size: 12px; }
+.formation-intro { align-items: start; }
+.formation-intro > p { padding-top: 26px; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.formation-pillars { margin-top: 84px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 54px; }
+.formation-pillars article { padding-top: 24px; border-top: 1px solid var(--tec-line); }
+.formation-pillars span, .pathway-grid span { color: #71817b; font-size: 10px; }
+.formation-pillars h3, .pathway-grid h3 { margin: 25px 0 17px; font-size: 30px; font-weight: 400; letter-spacing: -.04em; }
+.formation-pillars p, .pathway-grid p { color: var(--tec-soft); font-size: 14px; line-height: 1.65; }
+.gathering-detail-grid, .table-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 105px; align-items: center; }
+.gathering-detail-image, .table-image { position: relative; min-height: 620px; overflow: hidden; }
+.gathering-detail-image { border-radius: 0 90px 0 0; }
+.table-image { border-radius: 90px 0 0 0; }
+.gathering-detail-image img, .table-image img { object-fit: cover; }
+.gathering-detail-grid h2, .table-grid h2 { margin-bottom: 34px; }
+.gathering-detail-grid > div:last-child > p, .table-grid > div:first-child > p { color: var(--tec-soft); font-size: 15px; line-height: 1.7; }
+.gathering-detail-grid ul { margin: 28px 0 32px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; list-style: none; border-top: 1px solid var(--tec-line); }
+.gathering-detail-grid li { padding: 15px 0; color: var(--tec-soft); font-size: 13px; border-bottom: 1px solid var(--tec-line); }
+.table-details { margin: 30px 0; display: grid; grid-template-columns: 1fr 1fr; }
+.table-details span { padding: 16px 0; color: var(--tec-soft); font-size: 13px; border-top: 1px solid var(--tec-line); }
+.pathway-heading { align-items: end; margin-bottom: 60px; }
+.pathway-heading > p { max-width: 460px; margin: 0; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.pathway-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 23px; }
+.pathway-grid article { min-height: 285px; padding: 28px; display: flex; flex-direction: column; background: white; border: 1px solid var(--tec-line); }
+.pathway-grid p { margin-top: auto; }
+.discipleship-cta { color: white; background: #155844; }
+.discipleship-cta .split { align-items: center; }
+.discipleship-cta p { max-width: 500px; color: #dbe7e2; font-size: 17px; line-height: 1.65; }
+.discipleship-cta .button { margin-top: 20px; }
+
+@media (max-width: 800px) {
+  .discipleship-hero-heading, .gathering-detail-grid, .table-grid { grid-template-columns: 1fr; gap: 42px; }
+  .discipleship-hero { padding-top: 60px; }
+  .discipleship-hero h1 { font-size: clamp(48px, 14vw, 64px); }
+  .discipleship-hero-heading > p { margin: 0; }
+  .discipleship-cards { grid-template-columns: 1fr; }
+  .discipleship-cards article { min-height: 350px; padding: 32px 27px; }
+  .formation-pillars { margin-top: 62px; grid-template-columns: 1fr; gap: 32px; }
+  .gathering-detail-image, .table-image { min-height: 470px; }
+  .table-image { grid-row: 1; border-radius: 0 60px 0 0; }
+  .pathway-grid { grid-template-columns: 1fr 1fr; }
+  .pathway-grid article { min-height: 245px; }
+}
+
+@media (max-width: 420px) {
+  .discipleship-hero h1 { font-size: 46px; }
+  .discipleship-cards h2 { font-size: 34px; }
+  .gathering-detail-image, .table-image { min-height: 400px; }
+  .pathway-grid { grid-template-columns: 1fr; }
+}
+
+/* Partner page */
+.partner-page { color: var(--tec-green); background: #fff; }
+.partner-hero { padding-block: 116px; color: white; background: #155844; }
+.partner-hero .split { align-items: center; }
+.partner-hero .eyebrow { color: #dbe7e2; }
+.partner-hero h1 { margin: 0; font-size: clamp(60px, 6vw, 88px); line-height: 1; letter-spacing: -.065em; font-weight: 400; }
+.partner-hero h1 em { display: block; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.partner-hero-copy h2 { max-width: 560px; margin-bottom: 25px; font-size: 26px; line-height: 1.4; letter-spacing: -.025em; font-weight: 400; }
+.partner-hero-copy p { max-width: 560px; margin-bottom: 31px; color: #dbe7e2; font-size: 16px; line-height: 1.7; }
+.generosity-intro { align-items: start; }
+.generosity-intro > div { padding-top: 25px; }
+.generosity-intro > div p { color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.impact-grid { margin-top: 82px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 54px; }
+.impact-grid article { padding-top: 23px; border-top: 1px solid var(--tec-line); }
+.impact-grid span, .giving-options-grid article > span { color: #71817b; font-size: 10px; letter-spacing: .09em; text-transform: uppercase; }
+.impact-grid h3 { margin: 25px 0 17px; font-size: 30px; font-weight: 400; letter-spacing: -.04em; }
+.impact-grid p { color: var(--tec-soft); font-size: 14px; line-height: 1.65; }
+.stewardship-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 105px; align-items: center; }
+.stewardship-image { position: relative; min-height: 630px; overflow: hidden; border-radius: 0 90px 0 0; }
+.stewardship-image img { object-fit: cover; }
+.stewardship-grid h2 { margin-bottom: 34px; }
+.stewardship-grid > div:last-child > p { color: var(--tec-soft); font-size: 15px; line-height: 1.7; }
+.stewardship-points { margin: 30px 0; display: grid; grid-template-columns: 1fr 1fr; }
+.stewardship-points span { padding: 16px 0; color: var(--tec-soft); font-size: 13px; border-top: 1px solid var(--tec-line); }
+.giving-options-heading { margin-bottom: 58px; align-items: end; }
+.giving-options-heading > p { max-width: 450px; margin: 0; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.giving-options-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 23px; }
+.giving-options-grid article { min-height: 365px; padding: 34px; display: flex; flex-direction: column; border: 1px solid var(--tec-line); }
+.giving-options-grid h3 { margin: 38px 0 20px; font-size: 31px; font-weight: 400; letter-spacing: -.04em; }
+.giving-options-grid p, .giving-options-grid address { color: var(--tec-soft); font-size: 14px; line-height: 1.65; font-style: normal; }
+.giving-options-grid small { margin-top: 13px; color: #71817b; }
+.giving-options-grid .text-link { margin-top: auto; align-self: flex-start; }
+.partner-faq-grid { align-items: start; }
+.partner-cta { color: white; background: #155844; }
+.partner-cta .split { align-items: center; }
+.partner-cta p { max-width: 500px; color: #dbe7e2; font-size: 17px; line-height: 1.65; }
+.partner-cta .button { margin-top: 20px; }
+
+@media (max-width: 800px) {
+  .partner-hero { padding-block: 80px; }
+  .partner-hero .split, .stewardship-grid { grid-template-columns: 1fr; gap: 45px; }
+  .partner-hero h1 { font-size: clamp(54px, 16vw, 72px); }
+  .impact-grid { margin-top: 62px; grid-template-columns: 1fr; gap: 32px; }
+  .stewardship-image { min-height: 480px; }
+  .giving-options-grid { grid-template-columns: 1fr; }
+  .giving-options-grid article { min-height: 335px; }
+}
+
+@media (max-width: 420px) {
+  .partner-hero h1 { font-size: 50px; }
+  .stewardship-image { min-height: 400px; }
+  .giving-options-grid article { padding: 28px; }
+}
+
+/* Plan Your Visit page */
+.visit-page { color: var(--tec-green); background: #fff; }
+.visit-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 105px; align-items: start; }
+.visit-intro { position: sticky; top: 130px; }
+.visit-intro h1 { max-width: 520px; margin: 0 0 32px; font-size: clamp(58px, 5.2vw, 82px); line-height: 1.02; letter-spacing: -.065em; font-weight: 400; }
+.visit-intro h1 em { display: block; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.visit-intro > p:not(.eyebrow) { max-width: 500px; color: var(--tec-soft); font-size: 16px; line-height: 1.68; }
+.visit-location-note { margin-top: 44px; padding-left: 18px; display: flex; flex-direction: column; gap: 7px; color: var(--tec-soft); font-size: 13px; border-left: 2px solid #a8bf7a; }
+.visit-location-note strong { color: var(--tec-green); font-weight: 500; }
+.visit-form { padding: 38px; gap: 21px; background: #fff; border: 1px solid var(--tec-line); }
+.visit-form label { gap: 9px; color: var(--tec-green); font-size: 12px; font-weight: 600; }
+.visit-form label > span { color: var(--tec-soft); font-weight: 400; }
+.visit-form input, .visit-form select, .visit-form textarea { width: 100%; padding: 15px 16px; color: var(--tec-green); background: #fff; border: 1px solid #bfcac5; border-radius: 0; outline: 0; }
+.visit-form input, .visit-form select { min-height: 52px; }
+.visit-form input:focus, .visit-form select:focus, .visit-form textarea:focus { border-color: var(--tec-green); box-shadow: 0 0 0 1px var(--tec-green); }
+.visit-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.visit-check { display: grid; grid-template-columns: 20px 1fr; align-items: start; gap: 11px !important; color: var(--tec-soft) !important; font-weight: 400 !important; line-height: 1.5; }
+.visit-check input { width: 18px; min-height: 18px; height: 18px; margin-top: 1px; padding: 0; box-shadow: none; }
+.visit-form .button { min-width: 210px; margin-top: 5px; }
+.visit-form .button:disabled { opacity: .6; cursor: wait; }
+.visit-form-message { margin: 0; font-size: 13px; }
+.visit-form-message.success { padding: 0; color: #146047; background: transparent; }
+.visit-form-message.error { color: #9b342d; }
+.visit-section-heading { align-items: end; }
+.visit-section-heading h2, .visit-houston h2, .visit-faq h2 { margin: 0; font-size: clamp(48px, 4.8vw, 72px); line-height: 1.06; letter-spacing: -.06em; font-weight: 400; }
+.visit-section-heading h2 em, .visit-houston h2 em, .visit-faq h2 em { display: block; font-family: var(--font-playfair), Georgia, serif; font-weight: 500; }
+.visit-section-heading > p { max-width: 500px; margin: 0 0 8px; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.visit-pillars { margin-top: 82px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 54px; }
+.visit-pillars article { padding-top: 23px; border-top: 1px solid var(--tec-line); }
+.visit-pillars span { color: #71817b; font-size: 10px; letter-spacing: .09em; }
+.visit-pillars h3 { margin: 27px 0 17px; font-size: 29px; font-weight: 400; letter-spacing: -.04em; }
+.visit-pillars p { color: var(--tec-soft); font-size: 14px; line-height: 1.65; }
+.visit-houston { color: white; background: #155844; }
+.visit-houston-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
+.visit-houston-image { position: relative; min-height: 580px; overflow: hidden; border-radius: 0 80px 0 0; }
+.visit-houston-image img { object-fit: cover; }
+.visit-houston .eyebrow { color: #dbe7e2; }
+.visit-houston h2 { max-width: 570px; }
+.visit-houston-grid > div:last-child > p:not(.eyebrow) { max-width: 520px; margin-top: 30px; color: #dbe7e2; font-size: 16px; line-height: 1.7; }
+.visit-schedule { margin-top: 38px; border-top: 1px solid rgba(255,255,255,.25); }
+.visit-schedule div { padding: 20px 0; display: grid; grid-template-columns: 115px 1fr; gap: 20px; border-bottom: 1px solid rgba(255,255,255,.25); }
+.visit-schedule span { color: #bfcfc9; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.visit-schedule strong { font-size: 14px; font-weight: 500; }
+.visit-faq .faq-grid { align-items: start; }
+
+@media (max-width: 800px) {
+  .visit-grid, .visit-houston-grid { grid-template-columns: 1fr; gap: 55px; }
+  .visit-intro { position: static; }
+  .visit-intro h1 { font-size: clamp(52px, 15vw, 72px); }
+  .visit-form { padding: 28px; }
+  .visit-pillars { margin-top: 62px; grid-template-columns: 1fr; gap: 32px; }
+  .visit-houston-image { min-height: 480px; }
+}
+
+@media (max-width: 520px) {
+  .visit-form { padding: 23px 19px; }
+  .visit-form-row { grid-template-columns: 1fr; }
+  .visit-form .button { width: 100%; }
+  .visit-houston-image { min-height: 390px; }
+  .visit-schedule div { grid-template-columns: 1fr; gap: 7px; }
+}
+
+/* Leadership page */
+.leadership-page { color: var(--tec-green); background: #fff; }
+.leadership-hero { padding-block: 82px 120px; }
+.leadership-hero-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 96px; align-items: center; }
+.leadership-hero h1 { max-width: 600px; margin: 0; font-size: clamp(64px, 6.5vw, 98px); line-height: .98; letter-spacing: -.072em; }
+.leadership-hero h1 em { margin-top: 9px; }
+.leadership-hero-grid > div:first-child > p:not(.eyebrow) { max-width: 510px; margin: 35px 0 31px; color: var(--tec-soft); font-size: 16px; line-height: 1.68; }
+.leadership-hero-image { position: relative; min-height: 690px; overflow: hidden; border-radius: 0 95px 0 0; }
+.leadership-hero-image img { object-fit: cover; object-position: center 24%; }
+.leadership-profile-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 110px; align-items: start; }
+.leadership-profile-grid h2, .pastoral-partnership h2, .leadership-values-section h2, .leadership-cta h2 { font-size: clamp(50px, 5vw, 74px); }
+.leadership-biography { padding-top: 42px; }
+.leadership-biography p { max-width: 590px; margin-bottom: 25px; color: var(--tec-soft); font-size: 16px; line-height: 1.75; }
+.pastoral-partnership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 110px; align-items: center; }
+.pastoral-couple-image { position: relative; min-height: 650px; overflow: hidden; border-radius: 0 90px 0 0; }
+.pastoral-couple-image img { object-fit: cover; object-position: center 24%; }
+.pastoral-partnership h3 { margin: 32px 0 22px; font-size: 22px; line-height: 1.35; font-weight: 400; letter-spacing: -.03em; }
+.pastoral-partnership-grid > div:last-child > p:not(.eyebrow) { max-width: 520px; color: var(--tec-soft); font-size: 15px; line-height: 1.72; }
+.leadership-values-heading { align-items: end; }
+.leadership-values-heading > p { max-width: 480px; margin: 0 0 7px; color: var(--tec-soft); font-size: 16px; line-height: 1.7; }
+.leadership-values-grid { margin-top: 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 54px; }
+.leadership-values-grid article { padding-top: 23px; border-top: 1px solid var(--tec-line); }
+.leadership-values-grid span { color: #71817b; font-size: 10px; }
+.leadership-values-grid h3 { margin: 27px 0 17px; font-size: 29px; font-weight: 400; letter-spacing: -.04em; }
+.leadership-values-grid p { color: var(--tec-soft); font-size: 14px; line-height: 1.65; }
+.leadership-cta { color: white; background: #155844; }
+.leadership-cta .split { align-items: center; }
+.leadership-cta .eyebrow { color: #dbe7e2; }
+.leadership-cta .split > div:last-child > p { max-width: 510px; color: #dbe7e2; font-size: 16px; line-height: 1.7; }
+.leadership-cta .button { margin-top: 20px; }
+
+/* Beliefs page */
+.beliefs-page { color: var(--tec-green); background: #fff; }
+.beliefs-hero { padding-block: 120px 135px; }
+.beliefs-hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 110px; align-items: end; }
+.beliefs-hero h1 { max-width: 690px; margin: 0; font-size: clamp(70px, 7.4vw, 108px); line-height: .96; letter-spacing: -.075em; }
+.beliefs-hero h1 em { margin-top: 10px; }
+.beliefs-hero-grid > div > p { max-width: 510px; color: var(--tec-soft); font-size: 17px; line-height: 1.72; }
+.beliefs-hero-grid .text-link { margin-top: 18px; }
+.beliefs-section-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: 110px; align-items: start; }
+.beliefs-section-title { position: sticky; top: 135px; }
+.beliefs-section-title h2 { font-size: clamp(52px, 5vw, 74px); }
+.beliefs-section-title > p:not(.eyebrow) { max-width: 400px; margin-top: 30px; color: var(--tec-soft); font-size: 15px; line-height: 1.7; }
+.belief-list { border-top: 1px solid var(--tec-line); }
+.belief-list article { border-bottom: 1px solid var(--tec-line); }
+.belief-list button { width: 100%; min-height: 92px; padding: 0; display: grid; grid-template-columns: 55px 1fr 28px; gap: 20px; align-items: center; color: var(--tec-green); text-align: left; background: transparent; border: 0; cursor: pointer; }
+.belief-list button:hover strong { opacity: .65; }
+.belief-number { color: #71817b; font-size: 10px; letter-spacing: .08em; }
+.belief-list strong { font-size: 25px; font-weight: 400; letter-spacing: -.035em; transition: opacity .2s ease; }
+.belief-list b { font-size: 22px; font-weight: 400; text-align: right; }
+.belief-list article > p { max-width: 660px; margin: -4px 45px 30px 75px; color: var(--tec-soft); font-size: 14px; line-height: 1.72; }
+.practices-section { background: #fff; }
+.eternal-section { background: var(--tec-cream); }
+.beliefs-cta { color: white; background: #155844; }
+.beliefs-cta .split { align-items: center; }
+.beliefs-cta .eyebrow { color: #dbe7e2; }
+.beliefs-cta .split > div:last-child > p { max-width: 520px; color: #dbe7e2; font-size: 16px; line-height: 1.7; }
+.beliefs-cta .button { margin-top: 20px; }
+
+@media (max-width: 800px) {
+  .leadership-hero-grid, .leadership-profile-grid, .pastoral-partnership-grid, .beliefs-hero-grid, .beliefs-section-grid { grid-template-columns: 1fr; gap: 52px; }
+  .leadership-hero { padding-block: 68px 80px; }
+  .leadership-hero h1, .beliefs-hero h1 { font-size: clamp(54px, 16vw, 76px); }
+  .leadership-hero-image { min-height: 570px; }
+  .leadership-biography { padding-top: 0; }
+  .pastoral-couple-image { min-height: 540px; }
+  .leadership-values-grid { margin-top: 62px; grid-template-columns: 1fr; gap: 32px; }
+  .beliefs-hero { padding-block: 78px 90px; }
+  .beliefs-section-title { position: static; }
+}
+
+@media (max-width: 480px) {
+  .leadership-hero-image, .pastoral-couple-image { min-height: 440px; }
+  .belief-list button { min-height: 82px; grid-template-columns: 38px 1fr 22px; gap: 10px; }
+  .belief-list strong { font-size: 21px; }
+  .belief-list article > p { margin: -2px 25px 27px 48px; }
+}
