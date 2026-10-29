@@ -170,10 +170,10 @@ h2 em, h1 em { display: block; font-family: var(--font-playfair), Georgia, serif
 .hero { min-height: 890px; padding-top: 80px; padding-bottom: 0; }
 .hero .content { min-height: 810px; display: flex; flex-direction: column; }
 .hero-kicker { margin: 3px 0 30px; color: var(--tec-soft); font-size: 17px; }
-.hero h1 { margin: 0; width: min-content; font-size: clamp(92px, 10vw, 150px); line-height: .95; letter-spacing: -.075em; }
+.hero h1 { margin: 0; width: min-content; font-size: clamp(96px, 10.5vw, 160px); line-height: .95; letter-spacing: -.055em; }
 .hero h1 span, .hero h1 em { display: block; white-space: nowrap; }
-.hero h1 span { font-weight: 700; }
-.hero h1 em { margin: 14px 0 11px; font-size: .83em; font-weight: 500; }
+.hero h1 span { font-weight: 600; }
+.hero h1 em { margin: 14px 0 11px; font-size: .88em; font-weight: 400; letter-spacing: -.045em; }
 .hero-copy { max-width: 510px; margin: 46px 0 34px; color: var(--tec-soft); font-size: 17px; line-height: 1.6; }
 .hero-actions { display: flex; align-items: center; gap: 27px; }
 .hero-foot { margin-top: auto; padding: 34px 0 48px; display: flex; align-items: center; justify-content: space-between; color: var(--tec-soft); border-bottom: 1px solid var(--tec-line); font-size: 11px; letter-spacing: .04em; }
